@@ -1,0 +1,74 @@
+.details__list {
+  @include reset-list;
+}
+
+.details__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.details__text {
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $darkgray;
+}
+
+.details__item--motels {
+  padding-left: 48px;
+  position: relative;
+  margin-left: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.details__item--souvenirs {
+  padding-left: 45px;
+  position: relative;
+  margin-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 32px;
+    height: 38px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.details__item--food {
+  padding-left: 52px;
+  position: relative;
+  margin-left: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 40px;
+    height: 35px;
+    top: 0;
+    left: 0;
+  }
+}
