@@ -1,0 +1,23 @@
+.main-nav {
+  width: 320px;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-toggle.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 23px;
+  height: 22px;
+  top: 0px;
+  right: 0px;
+}
+
+.main-nav__list {
+  display: none;
+  background-color: $lightblue;
+  @include reset-list;
+}

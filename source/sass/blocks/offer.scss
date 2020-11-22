@@ -1,0 +1,30 @@
+.offer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  margin-top: 39px;
+}
+
+.offer__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+
+.offer__text {
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkgray;
+}
+
+.offer__button {
+  padding: 15px 32px;
+  margin-top: 127px;
+}
