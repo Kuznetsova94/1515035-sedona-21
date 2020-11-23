@@ -12,12 +12,13 @@
   border: none;
   width: 23px;
   height: 22px;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 }
 
 .main-nav__list {
   display: none;
   background-color: $lightblue;
+
   @include reset-list;
 }
