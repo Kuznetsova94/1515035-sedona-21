@@ -1,5 +1,15 @@
-@mixin reset-list{
+@mixin reset-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@mixin input-font {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  align-items: center;
+  border: none;
 }
