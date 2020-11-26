@@ -1,7 +1,16 @@
 .advantages__header {
-  margin-left: 17px;
+  margin: 0 auto;
   width: 285px;
   min-height: 162px;
+
+  @media (min-width: $tablet-width) {
+    width: 520px;
+    min-height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 483px;
+  }
 }
 
 .advantages__slogan {
@@ -24,9 +33,19 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
+//Стилизация первых двух причин
 .advantages__description--city,
 .advantages__description--bridge {
   background-color: $lightblue;
@@ -43,17 +62,127 @@
     background-image: url("../img/city-photo.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    width: 520px;
+    width: 320px;
     height: 260px;
-    top: 140px;
+    top: 210px;
     left: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__description--city {
+    width: 256px;
+    min-height: 256px;
+    margin-bottom: 0;
+    margin-right: 256px;
+
+    &::after {
+      background-image: url("../img/city-photo-t.jpg");
+      width: 512px;
+      height: 256px;
+      top: 0;
+      left: 256px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__description--city {
+    width: 400px;
+    margin-right: 800px;
+
+    &::after {
+      background-image: url("../img/city-photo-d.jpg");
+      width: 800px;
+      height: 256px;
+      top: 0;
+      left: 400px;
+    }
+  }
+}
+
+.advantages__description--bridge {
+  position: relative;
+  margin-bottom: 242px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bridge-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 520px;
+    height: 260px;
+    top: 210px;
+    left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description--bridge {
+    width: 256px;
+    min-height: 256px;
+    margin-bottom: 0;
+    margin-left: 512px;
+
+    &::after {
+      background-image: url("../img/bridge-photo-t.jpg");
+      width: 512px;
+      height: 256px;
+      top: 0;
+      left: -512px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__description--bridge {
+    width: 400px;
+    margin-left: 800px;
+
+    &::after {
+      background-image: url("../img/bridge-photo-d.jpg");
+      width: 800px;
+      height: 256px;
+      top: 0;
+      left: -800px;
+    }
+  }
+}
+
+//Стилизация остальных причин
 
 .advantages__description--square,
 .advantages__description--road,
 .advantages__description--tourists {
   background-color: $lightgray;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    min-height: 256px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantages__description--square,
+.advantages__description--road {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 280px;
+    height: 1px;
+    bottom: 0;
+    left: 20px;
+  }
 }
 
 .advantages__title {
@@ -63,9 +192,19 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 23px;
-}
+  padding-top: 34px;
+  margin-bottom: 0;
+  margin-top: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+  }
+}
 
 .advantages__number {
   font-size: 14px;
@@ -82,6 +221,8 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 45px;
+  margin-bottom: 0;
 }
 
 .advantages__details {

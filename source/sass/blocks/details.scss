@@ -1,5 +1,19 @@
 .details__list {
   @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 756px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .details__title {
@@ -19,10 +33,20 @@
   color: $darkgray;
 }
 
+.details__item {
+  margin-left: 18px;
+  //Подровнять блоки
+}
+
 .details__item--motels {
+  width: 240px;
+  min-height: 105px;
   padding-left: 48px;
   position: relative;
   margin-left: 21px;
+  order: 1;
+  outline: 5px solid rgb(128, 0, 128);
+  outline-offset: -5px;
 
   &::before {
     content: "";
@@ -32,15 +56,44 @@
     background-position: 0 0;
     width: 39px;
     height: 37px;
-    top: 0;
+    top: 15px;
     left: 0;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .details__item--motels {
+    width: 185px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 100px;
+  }
+
+  &::before {
+    background-image: url("../img/icon-house.svg");
+    width: 75px;
+    height: 74px;
+    //Отцентрировать
+    top: 100px;
+    left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details__item--motels {
+    width: 282px;
+  }
+}
+
 .details__item--souvenirs {
+  width: 230px;
+  min-height: 84px;
   padding-left: 45px;
   position: relative;
   margin-left: 25px;
+  order: 2;
+  outline: 5px solid rgb(128, 0, 128);
+  outline-offset: -5px;
 
   &::before {
     content: "";
@@ -50,15 +103,45 @@
     background-position: 0 0;
     width: 32px;
     height: 38px;
-    top: 0;
+    top: 15px;
     left: 0;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .details__item--souvenirs {
+    width: 193px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 100px;
+    order: 3;
+  }
+
+  &::before {
+    background-image: url("../img/icon-gift-d.svg");
+    width: 64px;
+    height: 75px;
+    //Отцентрировать
+    top: 100px;
+    left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details__item--souvenirs {
+    width: 215px;
+  }
+}
+
 .details__item--food {
+  width: 210px;
+  min-height: 105px;
   padding-left: 52px;
   position: relative;
   margin-left: 18px;
+  order: 3;
+  outline: 5px solid rgb(128, 0, 128);
+  outline-offset: -5px;
 
   &::before {
     content: "";
@@ -68,7 +151,32 @@
     background-position: 0 0;
     width: 40px;
     height: 35px;
-    top: 0;
+    top: 15px;
     left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .details__item--food {
+    width: 180px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 100px;
+    order: 2;
+  }
+
+  &::before {
+    background-image: url("../img/icon-gift-d.svg");
+    width: 76px;
+    height: 68px;
+    //Отцентрировать
+    top: 100px;
+    left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details__item--food {
+    width: 313px;
   }
 }
