@@ -1,17 +1,13 @@
-.page-footer {
-  width: 320px;
-}
-
 .page-footer__wrapper {
-  width: 280px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 648px;
     flex-direction: row;
     justify-content: space-between;
+    width: 638px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,4 +34,7 @@
 .page-footer__copyright {
   margin-bottom: 26px;
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

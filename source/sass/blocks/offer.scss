@@ -1,8 +1,18 @@
 .offer__wrapper {
   width: 280px;
   margin: 0 auto;
+  margin-top: 33px;
   margin-bottom: 49px;
-  margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .offer__title {
@@ -12,7 +22,13 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  //margin-top: 33px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 42px;
+  }
 }
 
 .offer__text {
@@ -22,9 +38,42 @@
   text-align: center;
   text-transform: uppercase;
   color: $darkgray;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .offer__button {
   padding: 15px 32px;
-  margin-top: 127px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.offer__map {
+  width: 320px;
+  height: 350px;
+  border: none;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
