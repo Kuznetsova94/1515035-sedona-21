@@ -5,11 +5,9 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 638px;
     flex-direction: row;
     justify-content: space-between;
-    outline: 5px solid rgba(255, 0, 0, 0.8);
-    outline-offset: -5px;
+    width: 638px;
   }
 
   @media (min-width: $desktop-width) {
