@@ -1,0 +1,52 @@
+.modal-fail {
+  display: none;
+  width: 320px;
+  min-height: 280px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    min-height: 347px;
+  }
+}
+
+.modal-fail__wrapper {
+  width: 237px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+}
+
+.modal-fail__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.modal-fail__text {
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkgray;
+  margin-bottom: 32px;
+}
+
+.modal-fail__button {
+  border: none;
+  margin: 0 auto;
+  width: 180px;
+  height: 58px;
+}
