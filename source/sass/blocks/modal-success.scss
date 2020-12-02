@@ -1,12 +1,10 @@
 .modal-success {
   display: none;
   width: 320px;
-  //min-height: 323px;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px $shadow;
 
   @media (min-width: $tablet-width) {
     width: 640px;
-    //min-height: 347px;
   }
 }
 

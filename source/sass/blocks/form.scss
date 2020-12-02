@@ -544,8 +544,8 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 3px solid #333333;
-  background-color: #333333;
+  border: 3px solid $darkgray;
+  background-color: $darkgray;
   top: -2px;
   left: 17px;
 }
@@ -615,9 +615,6 @@
     margin: 0 auto;
     margin-top: 45px;
     padding: 20px;
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
