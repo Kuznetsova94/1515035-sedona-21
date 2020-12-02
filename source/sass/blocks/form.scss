@@ -1,12 +1,37 @@
-.form {
+.form__header {
   width: 320px;
+  min-height: 151px;
+  position: relative;
+  padding-bottom: 16px;
 
-  @media (min-width: $tablet-width) {
-    width: 768px;
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .form__header {
+    width: 768px;
+    min-height: 129px;
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__header {
     width: 1200px;
+    min-height: 107px;
   }
 }
 
@@ -23,33 +48,17 @@
   }
 }
 
-.form__header {
+.form__wrapper--header {
   width: 306px;
-  min-height: 151px;
   margin: 0 auto;
-  position: relative;
-  padding-bottom: 16px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/line.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 320px;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-  }
 
   @media (min-width: $tablet-width) {
     width: 435px;
-    min-height: 129px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 434px;
-    min-height: 107px;
+    margin-top: 113px;
   }
 }
 
@@ -117,6 +126,7 @@
 }
 
 .form__fieldset--name {
+  display: flex;
   width: 280px;
   order: 1;
   position: relative;
@@ -133,19 +143,35 @@
     bottom: 0;
     left: 0;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .form__fieldset--name {
     width: 265px;
     order: 2;
-  }
+    margin-left: 58px;
+    margin-bottom: 70px;
 
-  @media (min-width: $desktop-width) {
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--name {
     width: 400px;
+    margin-left: 79px;
+
+    &::after {
+      background-image: none;
+    }
   }
 }
 
 .form__name {
-  width: 230px;
+  @include input-font;
+  width: 227px;
   min-height: 58px;
   background-color: $lightergray;
   color: $black;
@@ -153,35 +179,43 @@
   padding-left: 22px;
   margin-bottom: 20px;
   margin-top: 19px;
+  margin-left: 13px;
 
-  @include input-font;
+  &::placeholder {
+    color: $black;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 216px;
+    width: 212px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 350px;
+    width: 347px;
   }
 }
 
 .form__surname {
-  width: 192px;
+  width: 190px;
   min-height: 58px;
   background-color: $lightergray;
   color: $black;
   box-sizing: border-box;
   padding-left: 22px;
   margin-bottom: 20px;
+  margin-left: 13px;
+
+  &::placeholder {
+    color: $black;
+  }
 
   @include input-font;
 
   @media (min-width: $tablet-width) {
-    width: 178px;
+    width: 175px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 312px;
+    width: 310px;
   }
 }
 
@@ -192,11 +226,16 @@
   color: $black;
   box-sizing: border-box;
   padding-left: 22px;
+  margin-left: 13px;
+
+  &::placeholder {
+    color: $black;
+  }
 
   @include input-font;
 
   @media (min-width: $tablet-width) {
-    width: 180px;
+    width: 178px;
   }
 
   @media (min-width: $desktop-width) {
@@ -223,27 +262,67 @@
     bottom: 0;
     left: 0;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .form__fieldset--contacts {
     width: 648px;
     order: 3;
+
+    &::after {
+      background-image: none;
+    }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--contacts {
+    width: 960px;
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+.form__label--telephone,
+.form__label--email {
+  margin-left: 22px;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    margin: 0;
+  }
+}
+
+// Слово "телефон" на разных экранах
+.form__label--telephone {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__label--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
 .form__telephone {
-  width: 280px;
+  width: 200px;
   min-height: 58px;
-  padding-right: 58px;
+  margin-right: 58px;
   background-color: $lightergray;
-  box-sizing: border-box;
   padding-left: 22px;
   position: relative;
 
   @include input-font;
+
+  &::placeholder {
+    color: $black;
+  }
 
   @media (min-width: $tablet-width) {
     width: 590px;
@@ -251,46 +330,46 @@
 
   @media (min-width: $desktop-width) {
     width: 257px;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-    background-color: $darkergray;
-    background-position: 0 0;
-    width: 58px;
-    height: 58px;
-    top: 0;
-    right: 0;
   }
 }
 
 .form__item--telephone {
   margin-top: 17px;
-}
-
-.form__email {
-  width: 280px;
-  min-height: 58px;
-  padding-right: 58px;
-  background-color: $lightergray;
-  box-sizing: border-box;
-  padding-left: 22px;
   position: relative;
 
   &::after {
-    position: absolute;
     content: "";
-    background-image: url("../img/mail.svg");
+    position: absolute;
+    background-image: url("../img/phone.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
     background-color: $darkergray;
+    background-position: 50% 50%;
     width: 58px;
-    height: 58px;
-    top: 0;
-    right: 0;
+    height: 60px;
+    top: 30px;
+    left: 223px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__item--telephone {
+    &::after {
+      top: 29px;
+      left: 613px;
+    }
+  }
+}
+
+.form__email {
+  width: 200px;
+  min-height: 58px;
+  margin-right: 58px;
+  background-color: $lightergray;
+  padding-left: 22px;
+  position: relative;
+
+  &::placeholder {
+    color: $black;
   }
 
   @include input-font;
@@ -304,8 +383,74 @@
   }
 }
 
+.form__item--email {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    background-color: $darkergray;
+    background-position: 50% 50%;
+    width: 58px;
+    height: 60px;
+    top: 31px;
+    left: 223px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form__item--email {
+    &::after {
+      top: 29px;
+      left: 613px;
+    }
+  }
+}
+
+//Десктопная версия
+@media (min-width: $desktop-width) {
+  .form__list--contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__item--telephone {
+    display: flex;
+    width: 400px;
+    padding: 0;
+
+    &::after {
+      width: 58px;
+      height: 60px;
+      top: 0;
+      left: 340px;
+    }
+  }
+
+  .form__item--email {
+    display: flex;
+    width: 485px;
+    height: 58px;
+    padding: 0;
+    margin-top: 17px;
+
+    &::after {
+      width: 58px;
+      height: 60px;
+      top: 0;
+      left: 425px;
+    }
+  }
+}
+
 // Форма опроса о впечатлениях
 .form__fieldset--impression {
+  display: flex;
   width: 280px;
   order: 3;
   margin-top: 20px;
@@ -323,14 +468,40 @@
     bottom: 0;
     left: 0;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .form__fieldset--impression {
     width: 303px;
     order: 1;
-  }
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-right: 20px;
 
-  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 1px;
+      height: 292px;
+      top: 0;
+      left: 350px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--impression {
     width: 350px;
+    padding-bottom: 0;
+    padding-right: 128px;
+
+    &::after {
+      top: 0;
+      left: 500px;
+    }
   }
 }
 
@@ -355,13 +526,28 @@
     position: absolute;
     content: "";
     background-color: $lightergray;
+    background-image: none;
     width: 48px;
     height: 48px;
     border: 5px solid $lightergray;
     border-radius: 50%;
-    top: 0;
+    top: -20px;
     left: 0;
+    cursor: pointer;
   }
+}
+
+//Что-то не срослось
+.form__input--impression:checked + .form__label--impression::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid $darkgray;
+  background-color: $darkgray;
+  top: -2px;
+  left: 17px;
 }
 
 // Форма про достопримечательности
@@ -383,27 +569,75 @@
     bottom: 0;
     left: 0;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .form__fieldset--sights {
     width: 648px;
-  }
+    margin-top: 50px;
+    padding-bottom: 0;
 
-  @media (min-width: $desktop-width) {
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--sights {
     width: 960px;
+
+    &::after {
+      background-image: none;
+    }
   }
 }
 
-.form__item--sights {
-  margin-bottom: 54px;
+// Отступы у списка в мобильной версии
+@media (max-width: $mobile-width-only) {
+  .form__item--sights {
+    margin-bottom: 54px;
 
-  &:first-child {
-    margin-top: 36px;
-  }
+    &:first-child {
+      margin-top: 36px;
+    }
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
+
+// Планшетная версия
+@media (min-width: $tablet-width) {
+  .form__list--sights {
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 62px;
+  }
+}
+
+// Десктопная версия
+@media (min-width: $desktop-width) {
+  .form__list--sights {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 
 .form__label--sights {
   font-weight: bold;
@@ -418,17 +652,31 @@
     position: absolute;
     content: "";
     background-color: $lightergray;
+    background-image: none;
     width: 46px;
     height: 46px;
     border: 5px solid $lightergray;
-    top: 0;
+    border-radius: 5px;
+    top: -20px;
     left: 0;
+    cursor: pointer;
   }
+}
+
+.form__input--sights:checked + .form__label--sights::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 23px;
+  height: 16px;
+  top: -2px;
+  left: 17px;
 }
 
 // Форма с отзывом
 .form__fieldset--message {
-  width: 280px;
   order: 5;
   margin-top: 20px;
 
@@ -442,6 +690,7 @@
 }
 
 .form__label--message {
+  display: block;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -449,6 +698,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__textarea {
@@ -462,10 +715,48 @@
   margin-bottom: 51px;
 
   @include input-font;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 160px;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    height: 160px;
+  }
 }
 
 .form__button {
   order: 6;
   border: none;
-  margin-bottom: 48px;
+  width: 280px;
+  min-height: 58px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}
+
+.form__legend {
+  order: 7;
+  font-size: 14px;
+  line-height: 26px;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  display: none;
+  outline: 5px solid rgb(0, 113, 128);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
