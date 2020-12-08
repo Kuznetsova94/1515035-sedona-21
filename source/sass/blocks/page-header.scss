@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,67 +18,73 @@
 .page-header__logo {
   order: 2;
   text-align: center;
-  height: 445px;
+  height: 56px;
   box-sizing: border-box;
   z-index: 1;
-  position: relative;
-  padding-bottom: 389px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 389px;
-    background-image: url("../img/background-text.svg"), url("../img/intro-triangle.svg"), url("../img/background-image.jpg");
-    background-repeat: no-repeat;
-    background-position: 20px 90px, 0 332px, 0 0;
-    z-index: -10;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    padding-bottom: 518px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 518px;
-      background-image: url("../img/intro-picture-t.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      z-index: -10;
-    }
+    position: absolute;
+    width: 102px;
+    height: 84px;
+    top: 0;
+    left: 325px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    padding-bottom: 518px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 518px;
-      background-image: url("../img/intro-picture-d.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      z-index: -10;
-    }
+    width: 187px;
+    height: 97px;
+    top: 0;
+    left: 500px;
   }
 }
 
-/*.page-header__image {
-  order: 3;
-  background-image: url("../img/background-image.jpg");
-  background-repeat: no-repeat;
+.page-header__introduction {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/background-image.jpg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.page-header__introduction {
   width: 100%;
-}*/
+  height: 389px;
+  position: relative;
+  order: 4;
+  outline: 5px solid rgb(47, 128, 0);
+  outline-offset: -5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/background.jpg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.page-header__introduction--sedona {
+  height: 160px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/background.jpg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}

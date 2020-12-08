@@ -1,8 +1,25 @@
 .presentation__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.presentation__header {
   width: 266px;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+  }
 }
 
 .presentation__title {
@@ -22,3 +39,51 @@
   text-transform: uppercase;
   color: $darkgray;
 }
+
+  /*.presentation__video {
+    position: relative;
+    padding-bottom: 66px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $opacity;
+      width: 280px;
+      height: 45px;
+      left: 20px;
+      bottom: 70px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $lightergray;
+      width: 280px;
+      height: 66px;
+      left: 20px;
+      top: 13px;
+    }
+  }*/
+
+/*@media (min-width: $tablet-width) {
+  .presentation__video {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $opacity;
+      background-image: none;
+      width: 100%;
+      height: 93px;
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      background-color: none;
+      background-image: none;
+    }
+  }
+}
+*/
