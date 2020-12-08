@@ -1,5 +1,9 @@
 .site-list {
+  //outline: 5px solid rgb(47, 128, 0);
+  //outline-offset: -5px;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 690px;
   }
 
@@ -27,5 +31,27 @@
     line-height: 26px;
     color: $black;
     border: none;
+    margin-top: 16px;
+  }
+}
+
+//Отступы для центрирования логотипа
+@media (min-width: $tablet-width) {
+  .site-list__link--photo {
+    padding-right: 35px;
+  }
+
+  .site-list__link--form {
+    padding-left: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--photo {
+    padding-right: 85px;
+  }
+
+  .site-list__link--form {
+    padding-left: 80px;
   }
 }

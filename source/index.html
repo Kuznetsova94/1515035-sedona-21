@@ -14,8 +14,8 @@
         <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Закрыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -39,16 +39,15 @@
               </a>
             </li>
           </ul>
-          <button class="main-nav__close" type="button">
-            <span class="visually-hidden">Закрыть меню</span></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span></button>
         </div>
       </nav>
-      <!--<div class="page-header__image">
-      <img class="page-header__image-background" src="img/background-image.jpg" width="901" height="389"
-        alt="Фон изображения">
-      <img class="page-header__image-wrapper" src="img/background-text.svg" width="282" height="214"
-        alt="Текс изображения">
-    </div>-->
+      <div class="page-header__introduction">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/sedona-intro-tablet.svg">
+          <img src="img/sedona-intro-mobile.svg" alt="Приветственные слова для посетителей города Седона">
+        </picture>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт города Седона, Аризона, США</h1>
