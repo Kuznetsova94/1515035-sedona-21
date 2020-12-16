@@ -1,7 +1,4 @@
 .site-list {
-  //outline: 5px solid rgb(47, 128, 0);
-  //outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 690px;
@@ -14,6 +11,8 @@
 
 .site-list__link {
   display: block;
+  box-sizing: border-box;
+  padding-top: 11px;
   min-height: 55px;
   font-weight: bold;
   font-size: 18px;
@@ -31,27 +30,51 @@
     line-height: 26px;
     color: $black;
     border: none;
-    margin-top: 16px;
+    padding-top: 16px;
+    //margin-top: 16px;
+  }
+}
+
+.site-list__link--html {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link--html {
+    &::after {
+      background: none;
+    }
   }
 }
 
 //Отступы для центрирования логотипа
+//PixelPerfect
 @media (min-width: $tablet-width) {
   .site-list__link--photo {
-    padding-right: 35px;
+    margin-right: 105px;
   }
 
   .site-list__link--form {
-    padding-left: 39px;
+    margin-left: 105px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__link--photo {
-    padding-right: 85px;
+    margin-left: 20px;
   }
 
   .site-list__link--form {
-    padding-left: 80px;
+    margin-left: 135px;
   }
 }

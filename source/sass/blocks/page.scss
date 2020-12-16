@@ -7,8 +7,14 @@
 }
 
 .page__wrapper {
-  width: 100vh;
+  //min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    /* 1120px / 1200px ~= 94% */
+    width: 94%;
+    //max-width: 1120px;
+  }
 }
 
 .page__body {

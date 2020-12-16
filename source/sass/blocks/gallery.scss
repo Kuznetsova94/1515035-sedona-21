@@ -1,6 +1,8 @@
 .gallery__wrapper {
   width: 280px;
   margin: 0 auto;
+  //outline: 5px solid green;
+  //outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -26,7 +28,7 @@
     width: 320px;
     height: 1px;
     bottom: 0;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -75,6 +77,12 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .gallery__item {
@@ -91,7 +99,7 @@
     width: 320px;
     height: 1px;
     bottom: 0;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -127,19 +135,31 @@
 
 @media (min-width: $desktop-width) {
   .gallery__item--sunset {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
     width: 100%;
   }
 
   .gallery__item--cactus {
-    width: 33%;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
   }
 
   .gallery__item--road {
-    width: 33%;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
   }
 
   .gallery__item--bridge {
-    width: 33%;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 100%;
   }
 }
 
@@ -228,6 +248,7 @@
     margin: 0;
     background-color: $lightergray;
   }
+
   .gallery__description--road {
     background-color: $moregray;
   }
@@ -236,6 +257,8 @@
 @media (min-width: $desktop-width) {
   .gallery__photo {
     position: relative;
+    outline: 5px solid red;
+    outline-offset: -5px;
   }
 
   .gallery__description {
@@ -246,5 +269,21 @@
     left: 0;
     background-color: $blackopacity;
     color: $white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__picture {
+    display: block;
+  }
+
+  .gallery__picture--sunset {
+    height: 400px;
+  }
+
+  .gallery__picture--cactus,
+  .gallery__picture--road,
+  .gallery__picture--bridge {
+    height: 267px;
   }
 }

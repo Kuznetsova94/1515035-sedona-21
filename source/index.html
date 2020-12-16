@@ -11,43 +11,49 @@
   <div class="page__wrapper">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__close" type="button">
-          <span class="visually-hidden">Закрыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list--close site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--active">
+              <a class="site-list__link site-list__link--active" href="#">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link--photo" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+              <a class="site-list__link site-list__link--form" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link site-list__link--html" href="#">
                 HTML Academy
               </a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__close" type="button">
+            <span class="visually-hidden">Закрыть меню</span></button>
         </div>
       </nav>
       <div class="page-header__introduction">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/sedona-intro-tablet.svg">
+        <picture class="page-header__picture">
+          <source media="(min-width: 1200px)" srcset="img/intro-picture-d.jpg">
+          <source media="(min-width: 768px)" srcset="img/intro-picture-t.jpg">
           <img src="img/sedona-intro-mobile.svg" alt="Приветственные слова для посетителей города Седона">
         </picture>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт города Седона, Аризона, США</h1>
@@ -67,53 +73,55 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--city">
               <div class="advantages__description advantages__description--city">
-                <h3 class="advantages__title">Настоящий городок</h3>
+                <h3 class="advantages__title advantages__title--city">Настоящий городок</h3>
                 <p class="advantages__number">— №1 —</p>
-                <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="advantages__text advantages__text--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="advantages__details details">
-                <ul class="details__list">
-                  <li class="details__item details__item--motels">
-                    <h4 class="details__title">Жилье</h4>
-                    <p class="details__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                  </li>
-                  <li class="details__item details__item--souvenirs">
-                    <h4 class="details__title">Сувениры</h4>
-                    <p class="details__text">Не только китайского, но и местного производства!</p>
-                  </li>
-                  <li class="details__item details__item--food">
-                    <h4 class="details__title">Еда</h4>
-                    <p class="details__text">Всегда заказывайте <br> фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                </ul>
+                <div class="details__wrapper">
+                  <ul class="details__list">
+                    <li class="details__item details__item--motels">
+                      <h4 class="details__title details__title--motels">Жилье</h4>
+                      <p class="details__text details__text--motels">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </li>
+                    <li class="details__item details__item--souvenirs">
+                      <h4 class="details__title details__title--souvenirs">Сувениры</h4>
+                      <p class="details__text details__text--souvenirs">Не только китайского, <br class="details__break"> но и местного производства!</p>
+                    </li>
+                    <li class="details__item details__item--food">
+                      <h4 class="details__title details__title--food">Еда</h4>
+                      <p class="details__text details__text--food">Всегда заказывайте <br class="details__break-food"> фирменный бургер, вы не разочаруетесь!</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__description advantages__description--bridge">
-                <h3 class="advantages__title">Там есть мост дьявола</h3>
+                <h3 class="advantages__title advantages__title--bridge">Там есть <br class="advantages__break"> мост дьявола</h3>
                 <p class="advantages__number">— №2 —</p>
-                <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <p class="advantages__text advantages__text--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__description advantages__description--square">
-                <h3 class="advantages__title">Небольшая площадь</h3>
+                <h3 class="advantages__title advantages__title--square">Небольшая площадь</h3>
                 <p class="advantages__number">— №3 —</p>
-                <p class="advantages__text">Все интересные места находятся очень близко</p>
+                <p class="advantages__text advantages__text--square">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__description advantages__description--road">
-                <h3 class="advantages__title">Красивая дорога</h3>
+                <h3 class="advantages__title advantages__title--road">Красивая дорога</h3>
                 <p class="advantages__number">— №4 —</p>
-                <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__text advantages__text--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__description advantages__description--tourists">
-                <h3 class="advantages__title">Мало туристов</h3>
+                <h3 class="advantages__title advantages__title--tourists">Мало туристов</h3>
                 <p class="advantages__number">— №5 —</p>
-                <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+                <p class="advantages__text advantages__text--tourists">Большинство едет в гранд каньон и толпится там</p>
               </div>
             </li>
           </ul>
@@ -122,7 +130,7 @@
       <section class="offer">
         <div class="offer__wrapper">
           <h2 class="offer__title">Заинтересовались?</h2>
-          <p class="offer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          <p class="offer__text">Укажите предполагаемые даты поездки, <br class="offer__break"> и мы покажем вам лучшие предложения гостиниц в
             седоне</p>
           <a class="offer__button button" href="#">Найти гостиницу</a>
         </div>

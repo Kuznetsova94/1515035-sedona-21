@@ -38,6 +38,8 @@
 .form__wrapper {
   width: 280px;
   margin: 0 auto;
+  outline: 5px solid green;
+  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -48,9 +50,12 @@
   }
 }
 
+// ДУБЛИРУЮ КОД????
 .form__wrapper--header {
   width: 306px;
   margin: 0 auto;
+  outline: 5px solid blue;
+  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 435px;
@@ -69,6 +74,8 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  outline: 5px solid pink;
+  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -82,16 +89,26 @@
   text-align: center;
   text-transform: uppercase;
   color: $darkgray;
+  outline: 5px solid yellow;
+  outline-offset: -5px;
 }
 
 .form__set {
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  outline: 5px solid gray;
+  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
+    width: 650px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
   }
 }
 
@@ -150,7 +167,10 @@
     width: 265px;
     order: 2;
     margin-left: 58px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     &::after {
       background-image: none;
@@ -161,7 +181,8 @@
 @media (min-width: $desktop-width) {
   .form__fieldset--name {
     width: 400px;
-    margin-left: 79px;
+    margin-left: 75px;
+    margin-bottom: 70px;
 
     &::after {
       background-image: none;
@@ -246,8 +267,8 @@
 // Форма контактных данных
 .form__fieldset--contacts {
   width: 280px;
+  box-sizing: border-box;
   order: 2;
-  margin-top: 20px;
   position: relative;
   padding-bottom: 28px;
 
@@ -267,6 +288,7 @@
 @media (min-width: $tablet-width) {
   .form__fieldset--contacts {
     width: 648px;
+    padding: 0;
     order: 3;
 
     &::after {
@@ -291,7 +313,10 @@
   margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
+    width: 150px;
     margin: 0;
+    margin-right: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -304,6 +329,8 @@
 
 .form__label--desktop {
   display: none;
+  margin-right: 15px;
+  margin-top: 10px;
 
   @media (min-width: $desktop-width) {
     display: inline;
@@ -311,7 +338,8 @@
 }
 
 .form__telephone {
-  width: 200px;
+  width: 223px;
+  box-sizing: border-box;
   min-height: 58px;
   margin-right: 58px;
   background-color: $lightergray;
@@ -329,7 +357,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 257px;
+    width: 270px;
+    height: 60px;
   }
 }
 
@@ -345,7 +374,7 @@
     background-color: $darkergray;
     background-position: 50% 50%;
     width: 58px;
-    height: 60px;
+    height: 58px;
     top: 30px;
     left: 223px;
   }
@@ -353,16 +382,19 @@
 
 @media (min-width: $tablet-width) {
   .form__item--telephone {
+    width: 648px;
+
     &::after {
-      top: 29px;
-      left: 613px;
+      top: 31px;
+      left: 590px;
     }
   }
 }
 
 .form__email {
-  width: 200px;
-  min-height: 58px;
+  width: 223px;
+  box-sizing: border-box;
+  height: 58px;
   margin-right: 58px;
   background-color: $lightergray;
   padding-left: 22px;
@@ -379,7 +411,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 257px;
+    width: 270px;
+    height: 60px;
   }
 }
 
@@ -394,7 +427,7 @@
     background-color: $darkergray;
     background-position: 50% 50%;
     width: 58px;
-    height: 60px;
+    height: 58px;
     top: 31px;
     left: 223px;
   }
@@ -403,9 +436,11 @@
 
 @media (min-width: $tablet-width) {
   .form__item--email {
+    width: 648px;
+
     &::after {
-      top: 29px;
-      left: 613px;
+      top: 30px;
+      left: 590px;
     }
   }
 }
@@ -472,9 +507,10 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset--impression {
-    width: 303px;
+    width: 300px;
     order: 1;
     margin-top: 0;
+    padding-left: 0;
     padding-bottom: 0;
     padding-right: 20px;
 
@@ -487,7 +523,7 @@
       width: 1px;
       height: 292px;
       top: 0;
-      left: 350px;
+      left: 330px;
     }
   }
 }
@@ -495,12 +531,11 @@
 @media (min-width: $desktop-width) {
   .form__fieldset--impression {
     width: 350px;
-    padding-bottom: 0;
     padding-right: 128px;
 
     &::after {
       top: 0;
-      left: 500px;
+      left: 478px;
     }
   }
 }
@@ -586,6 +621,7 @@
 @media (min-width: $desktop-width) {
   .form__fieldset--sights {
     width: 960px;
+    padding-left: 0;
 
     &::after {
       background-image: none;
@@ -682,6 +718,7 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -753,10 +790,10 @@
   text-align: right;
   text-transform: uppercase;
   display: none;
-  outline: 5px solid rgb(0, 113, 128);
+  outline: 5px solid blue;
   outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: block;
   }
 }

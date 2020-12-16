@@ -1,12 +1,8 @@
 .main-nav {
   position: relative;
-  width: auto;
-  min-height: 84px;
-  background-color: $lightblue;
   order: 1;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
     display: flex;
     flex-wrap: wrap;
   }
@@ -18,21 +14,30 @@
     justify-content: space-between;
     width: 690px;
     margin: 0 auto;
+    margin-left: 49px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 87px;
     width: 1040px;
   }
 }
 
 .main-nav__list {
+  background-color: $lightblue;
+
   @include reset-list;
 
   @media (min-width: $tablet-width) {
+    background-color: $white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.main-nav__list--close {
+  //display: none;
 }
 
 // Меню-бургер
@@ -42,7 +47,8 @@
   z-index: 2;
   width: 23px;
   height: 22px;
-  bottom: -40px;
+  //PixelPerfect
+  bottom: -42px;
   right: 20px;
   background-color: transparent;
   border: none;
