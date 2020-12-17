@@ -40,30 +40,31 @@
   color: $darkgray;
 }
 
-  /*.presentation__video {
-    position: relative;
-    padding-bottom: 66px;
+/*.presentation__video {
+  position: relative;
+  padding-bottom: 66px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: $opacity;
-      width: 280px;
-      height: 45px;
-      left: 20px;
-      bottom: 70px;
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $opacity;
+    width: 280px;
+    height: 45px;
+    left: 20px;
+    bottom: 70px;
+  }
 
-    &::after {
-      position: absolute;
-      content: "";
-      background-color: $lightergray;
-      width: 280px;
-      height: 66px;
-      left: 20px;
-      top: 13px;
-    }
-  }*/
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $lightergray;
+    width: 280px;
+    height: 66px;
+    left: 20px;
+    top: 13px;
+  }
+}*/
+
 
 /*@media (min-width: $tablet-width) {
   .presentation__video {

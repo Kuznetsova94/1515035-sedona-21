@@ -22,12 +22,18 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  //margin-top: 33px;
-  margin-bottom: 34px;
+  //PixelPerfect
+  padding-top: 1px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -2px;
+    margin-top: -2px;
   }
 }
 
@@ -41,11 +47,23 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    //PixelPerfect
+    margin-top: -12px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 42px;
+    //PixelPerfect
+    margin-bottom: 44px;
+    margin-top: -10px;
+    margin-left: -5px;
+  }
+}
+
+.offer__break {
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    display: none;
   }
 }
 
