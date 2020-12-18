@@ -12,7 +12,8 @@
     background-position: 0 0;
     width: 320px;
     height: 1px;
-    bottom: 0;
+    //PixelPerfect
+    bottom: 14px;
     left: 0;
   }
 }
@@ -38,8 +39,6 @@
 .form__wrapper {
   width: 280px;
   margin: 0 auto;
-  outline: 5px solid green;
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -51,11 +50,9 @@
 }
 
 // ДУБЛИРУЮ КОД????
-.form__wrapper--header {
+/*.form__wrapper--header {
   width: 306px;
   margin: 0 auto;
-  outline: 5px solid blue;
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 435px;
@@ -65,7 +62,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 113px;
   }
-}
+}*/
 
 .form__title {
   font-weight: bold;
@@ -74,11 +71,20 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  outline: 5px solid pink;
-  outline-offset: -5px;
+  //PixelPerfect
+  margin-top: 35px;
+  margin-left: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    //PixelPerfect
+    margin-top: 65px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    //PixelPerfect
+    margin-top: 117px;
   }
 }
 
@@ -89,22 +95,36 @@
   text-align: center;
   text-transform: uppercase;
   color: $darkgray;
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+  //PixelPerfect
+  margin-top: 28px;
+  margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    //PixelPerfect
+    margin: 0 auto;
+    margin-top: 32px;
+    //margin-left: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //PixelPerfect
+    margin: 0 auto;
+    margin-top: 32px;
+  }
 }
 
 .form__set {
   margin: 0 auto;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  outline: 5px solid gray;
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 650px;
     flex-direction: row;
     flex-wrap: wrap;
+    //PixelPerfect
+    margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,7 +167,10 @@
   width: 280px;
   order: 1;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
+  //PixelPerfect
+  margin-top: 8px;
+  margin-left: 9px;
 
   &::after {
     position: absolute;
@@ -158,7 +181,7 @@
     width: 320px;
     height: 1px;
     bottom: 0;
-    left: 0;
+    left: -9px;
   }
 }
 
@@ -166,27 +189,42 @@
   .form__fieldset--name {
     width: 265px;
     order: 2;
-    margin-left: 58px;
     margin-bottom: 80px;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
+    //PixelPerfect
+    margin-top: 0;
+    margin-left: 61px;
 
     &::after {
       background-image: none;
     }
+  }
+
+  //PixelPerfect
+  .form__heading--name {
+    margin-left: -53px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__fieldset--name {
     width: 400px;
-    margin-left: 75px;
+    //PixelPerfect
+    margin-top: -6px;
+    margin-left: 78px;
     margin-bottom: 70px;
 
     &::after {
       background-image: none;
     }
+  }
+
+  //PixelPerfect
+  .form__heading--name {
+    text-align: left;
+    margin-left: 2px;
   }
 }
 
@@ -197,9 +235,10 @@
   background-color: $lightergray;
   color: $black;
   box-sizing: border-box;
-  padding-left: 22px;
+  //PixelPerfect
+  padding-left: 20px;
   margin-bottom: 20px;
-  margin-top: 19px;
+  margin-top: 16px;
   margin-left: 13px;
 
   &::placeholder {
@@ -208,10 +247,16 @@
 
   @media (min-width: $tablet-width) {
     width: 212px;
+    //PixelPerfect
+    padding-left: 20px;
+    padding-top: 7px;
+    margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: 347px;
+    //PixelPerfect
+    padding-left: 23px;
   }
 }
 
@@ -221,7 +266,8 @@
   background-color: $lightergray;
   color: $black;
   box-sizing: border-box;
-  padding-left: 22px;
+  //PixelPerfect
+  padding-left: 21px;
   margin-bottom: 20px;
   margin-left: 13px;
 
@@ -233,10 +279,15 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
+    //PixelPerfect
+    padding-left: 20px;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     width: 310px;
+    //PixelPerfect
+    padding-left: 25px;
   }
 }
 
@@ -257,10 +308,15 @@
 
   @media (min-width: $tablet-width) {
     width: 178px;
+    //PixelPerfect
+    padding-left: 22px;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     width: 314px;
+    //PixelPerfect
+    padding-left: 25px;
   }
 }
 
@@ -270,7 +326,10 @@
   box-sizing: border-box;
   order: 2;
   position: relative;
-  padding-bottom: 28px;
+  //PixelPerfect
+  margin-bottom: 28px;
+  margin-top: 22px;
+  margin-left: 9px;
 
   &::after {
     position: absolute;
@@ -281,7 +340,7 @@
     width: 320px;
     height: 1px;
     bottom: 0;
-    left: 0;
+    left: -9px;
   }
 }
 
@@ -290,19 +349,48 @@
     width: 648px;
     padding: 0;
     order: 3;
+    //outline: 5px solid red;
+    //PixelPerfect
+    margin-top: -6px;
+    padding-bottom: 40px;
+    margin-left: 0;
+
 
     &::after {
-      background-image: none;
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 648px;
+      height: 1px;
+      top: 7px;
+      left: 0;
     }
+  }
+
+  //PixelPerfect
+  .form__list--contacts {
+    margin-top: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__fieldset--contacts {
     width: 960px;
+    //PixelPerfect
+    margin-top: 1px;
 
     &::after {
-      background-image: none;
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 960px;
+      height: 1px;
+      top: 7px;
+      left: 0;
     }
   }
 }
@@ -310,13 +398,14 @@
 .form__label--telephone,
 .form__label--email {
   margin-left: 22px;
-  margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
-    width: 150px;
+    width: 160px;
+    //PixelPerfect
     margin: 0;
     margin-right: 15px;
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -329,8 +418,10 @@
 
 .form__label--desktop {
   display: none;
+  //PixelPerfect
   margin-right: 15px;
-  margin-top: 10px;
+  margin-left: 1px;
+  margin-top: 23px;
 
   @media (min-width: $desktop-width) {
     display: inline;
@@ -338,13 +429,16 @@
 }
 
 .form__telephone {
+  position: relative;
   width: 223px;
   box-sizing: border-box;
   min-height: 58px;
-  margin-right: 58px;
   background-color: $lightergray;
   padding-left: 22px;
-  position: relative;
+  margin-right: 58px;
+  //PixelPerfect
+  margin-top: 8px;
+  padding-top: 6px;
 
   @include input-font;
 
@@ -354,17 +448,23 @@
 
   @media (min-width: $tablet-width) {
     width: 590px;
+    //PixelPerfect
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     width: 270px;
     height: 60px;
+    //PixelPerfect
+    padding-top: 5px;
+    padding-left: 25px;
   }
 }
 
 .form__item--telephone {
-  margin-top: 17px;
   position: relative;
+  //PixelPerfect
+  margin-top: 7px;
 
   &::after {
     content: "";
@@ -375,21 +475,24 @@
     background-position: 50% 50%;
     width: 58px;
     height: 58px;
-    top: 30px;
-    left: 223px;
+    //PixelPerfect
+    top: 38px;
+    left: 222px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form__item--telephone {
     width: 648px;
+    margin-bottom: 20px;
 
     &::after {
-      top: 31px;
+      top: 39px;
       left: 590px;
     }
   }
 }
+
 
 .form__email {
   width: 223px;
@@ -399,6 +502,9 @@
   background-color: $lightergray;
   padding-left: 22px;
   position: relative;
+  //PixelPerfect
+  margin-top: 4px;
+  padding-top: 6px;
 
   &::placeholder {
     color: $black;
@@ -408,16 +514,24 @@
 
   @media (min-width: $tablet-width) {
     width: 590px;
+    //PixelPerfect
+    padding-top: 9px;
+    padding-left: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 270px;
+    width: 275px;
     height: 60px;
+    //PixelPerfect
+    margin-left: 5px;
+    padding-left: 21px;
   }
 }
 
 .form__item--email {
   position: relative;
+  //PixelPerfect
+  margin-top: 10px;
 
   &::after {
     content: "";
@@ -428,18 +542,18 @@
     background-position: 50% 50%;
     width: 58px;
     height: 58px;
-    top: 31px;
-    left: 223px;
+    //PixelPerfect
+    top: 35px;
+    left: 222px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .form__item--email {
     width: 648px;
 
     &::after {
-      top: 30px;
+      top: 34px;
       left: 590px;
     }
   }
@@ -456,29 +570,33 @@
 
   .form__item--telephone {
     display: flex;
-    width: 400px;
+    width: 402px;
+    //PixelPerfect
+    margin-top: 49px;
+    margin-bottom: 20px;
     padding: 0;
 
     &::after {
       width: 58px;
       height: 60px;
-      top: 0;
-      left: 340px;
+      top: 8px;
+      left: 343px;
     }
   }
 
   .form__item--email {
     display: flex;
-    width: 485px;
+    width: 488px;
     height: 58px;
+    //PixelPerfect
     padding: 0;
-    margin-top: 17px;
+    margin-top: 51px;
 
     &::after {
       width: 58px;
       height: 60px;
-      top: 0;
-      left: 425px;
+      top: 4px;
+      left: 430px;
     }
   }
 }
@@ -488,8 +606,10 @@
   display: flex;
   width: 280px;
   order: 3;
-  margin-top: 20px;
   position: relative;
+  //PixelPerfect
+  margin-left: 9px;
+  margin-top: 22px;
   padding-bottom: 41px;
 
   &::after {
@@ -501,7 +621,7 @@
     width: 320px;
     height: 1px;
     bottom: 0;
-    left: 0;
+    left: -9px;
   }
 }
 
@@ -513,6 +633,8 @@
     padding-left: 0;
     padding-bottom: 0;
     padding-right: 20px;
+    //PixelPerfect
+    margin-left: 0;
 
     &::after {
       position: absolute;
@@ -523,7 +645,7 @@
       width: 1px;
       height: 292px;
       top: 0;
-      left: 330px;
+      left: 325px;
     }
   }
 }
@@ -531,20 +653,55 @@
 @media (min-width: $desktop-width) {
   .form__fieldset--impression {
     width: 350px;
+    //PixelPerfect
+    margin-top: -5px;
     padding-right: 128px;
 
     &::after {
       top: 0;
-      left: 478px;
+      left: 481px;
     }
   }
 }
 
 .form__item--impression {
-  margin-top: 43px;
+  //PixelPerfect
+  margin-top: 42px;
 
   &:first-child {
-    margin-top: 37px;
+    margin-top: 33px;
+  }
+}
+
+//PixelPerfect
+@media (min-width: $tablet-width) {
+  .form__heading--impression {
+    margin-left: -14px;
+  }
+
+  .form__item--impression {
+    margin-top: 52px;
+    margin-left: -2px;
+
+    &:first-child {
+      margin-top: 67px;
+    }
+  }
+}
+
+//PixelPerfect
+@media (min-width: $desktop-width) {
+  .form__heading--impression {
+    margin-left: 43px;
+  }
+
+  .form__item--impression {
+    margin-top: 52px;
+    margin-left: 2px;
+
+    &:first-child {
+      margin-top: 66px;
+    }
   }
 }
 
@@ -589,8 +746,10 @@
 .form__fieldset--sights {
   width: 280px;
   order: 4;
-  margin-top: 15px;
   position: relative;
+  //PixelPerfect
+  margin-left: 9px;
+  margin-top: 16px;
   padding-bottom: 39px;
 
   &::after {
@@ -609,25 +768,55 @@
 @media (min-width: $tablet-width) {
   .form__fieldset--sights {
     width: 648px;
-    margin-top: 50px;
+    //PixelPerfect
+    margin-top: -13px;
     padding-bottom: 0;
 
     &::after {
-      background-image: none;
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 648px;
+      height: 1px;
+      top: 7px;
+      left: 0;
     }
+  }
+
+  .form__heading--sights {
+    width: 280px;
+    margin-left: -4px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__fieldset--sights {
     width: 960px;
-    padding-left: 0;
+    //PixelPerfect
+    margin-top: -36px;
 
     &::after {
-      background-image: none;
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 960px;
+      height: 1px;
+      top: 25px;
+      left: -5px;
     }
   }
+
+  .form__heading--sights {
+    width: 275px;
+    //PixelPerfect
+    margin-left: -10px;
+  }
 }
+
 
 // Отступы у списка в мобильной версии
 @media (max-width: $mobile-width-only) {
@@ -644,18 +833,25 @@
   }
 }
 
+//PixelPerfect
+.form__list--sights {
+  margin-top: -4px;
+}
+
 // Планшетная версия
 @media (min-width: $tablet-width) {
   .form__list--sights {
     width: 480px;
     margin: 0 auto;
-    margin-top: 45px;
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 40px;
     row-gap: 62px;
+    //PixelPerfect
+    margin-top: 33px;
+    margin-left: 57px;
+    padding: 20px;
   }
 }
 
@@ -664,13 +860,15 @@
   .form__list--sights {
     width: 960px;
     margin: 0 auto;
-    margin-top: 45px;
-    padding-left: 0;
-    padding-right: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    //PixelPerfect
+    margin-top: 33px;
+    margin-left: -18px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -681,8 +879,9 @@
   line-height: 26px;
   text-transform: none;
   color: $black;
-  padding-left: 75px;
   position: relative;
+  //PixelPerfect
+  padding-left: 80px;
 
   &::before {
     position: absolute;
@@ -707,22 +906,55 @@
   background-position: 0 0;
   width: 23px;
   height: 16px;
-  top: -2px;
+  top: 0;
   left: 17px;
 }
 
 // Форма с отзывом
 .form__fieldset--message {
   order: 5;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-left: 9px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .form__fieldset--message {
+    position: relative;
     width: 648px;
     padding: 0;
-  }
+    //PixelPerfect
+    margin-top: 65px;
+    margin-left: 4px;
 
-  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 648px;
+      height: 1px;
+      top: 7px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--message {
     width: 960px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/horizontal-line-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 960px;
+      height: 1px;
+      top: 5px;
+      left: -5px;
+    }
   }
 }
 
@@ -735,9 +967,17 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  //PixelPerfect
+  margin-left: -8px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //PixelPerfect
+    margin-left: -5px;
+    margin-top: -2px;
   }
 }
 
@@ -746,35 +986,49 @@
   box-sizing: border-box;
   width: 279px;
   min-height: 160px;
+  //PixelPerfect
   padding-left: 21px;
   padding-top: 13px;
   margin-top: 15px;
-  margin-bottom: 51px;
+  margin-bottom: 35px;
 
   @include input-font;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 160px;
-    margin-top: 55px;
+    //PixelPerfect
+    padding-left: 20px;
+    padding-top: 19px;
+    margin-left: -3px;
+    margin-top: 53px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 960px;
     height: 160px;
+    //PixelPerfect
+    padding-left: 22px;
   }
 }
+
 
 .form__button {
   order: 6;
   border: none;
   width: 280px;
   min-height: 58px;
+  font-size: 18px;
   margin: 0 auto;
+  //PixelPerfect
+  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 324px;
+    //PixelPerfect
+    margin-bottom: 66px;
+    margin-left: 1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -783,17 +1037,18 @@
 }
 
 .form__legend {
+  display: none;
   order: 7;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 26px;
   align-items: center;
   text-align: right;
   text-transform: uppercase;
-  display: none;
-  outline: 5px solid blue;
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 250px;
+    //PixelPerfect
+    margin-top: 19px;
   }
 }

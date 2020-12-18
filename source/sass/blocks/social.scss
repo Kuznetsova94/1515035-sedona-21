@@ -11,6 +11,16 @@
   background-color: $lightblue;
   margin-right: 6px;
 
+  &:hover {
+    background-color: $brightblue;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $blue;
+    fill: $whiteopacity;
+  }
+
   &:last-child {
     margin-right: 0;
   }

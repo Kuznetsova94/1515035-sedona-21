@@ -39,7 +39,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link site-list__link--html" href="#">
                 HTML Academy
               </a>
             </li>
@@ -48,11 +48,11 @@
             <span class="visually-hidden">Закрыть меню</span></button>
         </div>
       </nav>
-      <div class="page-header__introduction page-header__introduction--sedona">
-        <picture class="page-header__picture page-header__picture--sedona">
-          <!--<source media="(min-width: 1200px)" srcset="img/intro-picture-d.jpg">
-          <source media="(min-width: 768px)" srcset="img/intro-picture-t.jpg">-->
-          <img src="img/sedona.svg" alt="Логотип города Седона">
+      <div class="page-header__introduction-sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+          <img class="page-header__sedona" src="img/sedona.svg" alt="Логотип города Седона">
         </picture>
       </div>
     </header>
@@ -71,7 +71,7 @@
         </header>
         <form class="form__set" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset form__fieldset--name">
-            <legend class="form__heading">Представьтесь:</legend>
+            <legend class="form__heading form__heading--name">Представьтесь:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="name-field">Имя<sup>*</sup>:</label>
@@ -106,7 +106,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--impression">
-            <legend class="form__heading">Ваше общее впечатление:</legend>
+            <legend class="form__heading form__heading--impression">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__item form__item--impression">
                 <input class="visually-hidden form__input form__input--impression" type="radio"
@@ -126,7 +126,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--sights">
-            <legend class="form__heading">Посещенные достопримечательности:</legend>
+            <legend class="form__heading form__heading--sights">Посещенные достопримечательности:</legend>
             <ul class="form__list form__list--sights">
               <li class="form__item form__item--sights">
                 <input class="visually-hidden form__input form__input--sights" type="checkbox" name="bridge"

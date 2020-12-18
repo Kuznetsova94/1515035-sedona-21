@@ -25,6 +25,8 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    //PixelPerfect
+    margin-top: 5px;
   }
 }
 
@@ -44,7 +46,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -3px;
+    //PixelPerfect
+    margin-left: 1px;
   }
 }
 
