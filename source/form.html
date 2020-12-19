@@ -11,7 +11,7 @@
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -109,17 +109,17 @@
             <legend class="form__heading form__heading--impression">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__item form__item--impression">
-                <input class="visually-hidden form__input form__input--impression" type="radio"
-                  name="positive-impression" value="impression" id="radio-positive" checked>
+                <input class="visually-hidden form__input form__input--impression" type="radio" name="impression-group"
+                  value="impression" id="radio-positive" checked>
                 <label class="form__label form__label--impression" for="radio-positive">Скорее положительное</label>
               </li>
               <li class="form__item form__item--impression">
-                <input class="visually-hidden form__input form__input--impression" type="radio"
-                  name="negative-impression" value="impression" id="radio-negative">
+                <input class="visually-hidden form__input form__input--impression" type="radio" name="impression-group"
+                  value="impression" id="radio-negative">
                 <label class="form__label form__label--impression" for="radio-negative">Скорее отрицательное</label>
               </li>
               <li class="form__item form__item--impression">
-                <input class="visually-hidden form__input form__input--impression" type="radio" name="none-impression"
+                <input class="visually-hidden form__input form__input--impression" type="radio" name="impression-group"
                   value="impression" id="radio-none">
                 <label class="form__label form__label--impression" for="radio-none">Затрудняюсь ответить</label>
               </li>
