@@ -24,6 +24,18 @@
   border-top: 1px solid rgba(1, 1, 1, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
+  &:hover {
+    color: $lightblue;
+  }
+
+  &:focus {
+    color: $blackopacity;
+  }
+
+  &:active {
+    color: $plum;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: bold;
     font-size: 14px;
@@ -61,11 +73,12 @@
 //PixelPerfect
 @media (min-width: $tablet-width) {
   .site-list__link--photo {
-    margin-right: 105px;
+    // margin-right: 70px;
+    margin-left: 27px;
   }
 
   .site-list__link--form {
-    margin-left: 105px;
+    margin-left: 160px;
   }
 }
 

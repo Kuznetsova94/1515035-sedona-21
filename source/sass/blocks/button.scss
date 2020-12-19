@@ -9,4 +9,18 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $brightblue;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $blue;
+    color: $whiteopacity;
+  }
+
+  &:disabled {
+    background-color: $darkergray;
+  }
 }
