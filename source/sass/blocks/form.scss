@@ -245,6 +245,17 @@
     color: $black;
   }
 
+  &:hover {
+    background-color: $darkestgray;
+  }
+
+  &:focus,
+  &:active {
+    border: 4px solid $darkestgray;
+    box-sizing: border-box;
+    background-color: $white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 212px;
     //PixelPerfect
@@ -275,6 +286,17 @@
     color: $black;
   }
 
+  &:hover {
+    background-color: $darkestgray;
+  }
+
+  &:focus,
+  &:active {
+    border: 4px solid $darkestgray;
+    box-sizing: border-box;
+    background-color: $white;
+  }
+
   @include input-font;
 
   @media (min-width: $tablet-width) {
@@ -302,6 +324,17 @@
 
   &::placeholder {
     color: $black;
+  }
+
+  &:hover {
+    background-color: $darkestgray;
+  }
+
+  &:focus,
+  &:active {
+    border: 4px solid $darkestgray;
+    box-sizing: border-box;
+    background-color: $white;
   }
 
   @include input-font;
@@ -446,6 +479,17 @@
     color: $black;
   }
 
+  &:hover {
+    background-color: $darkestgray;
+  }
+
+  &:focus,
+  &:active {
+    border: 4px solid $darkestgray;
+    box-sizing: border-box;
+    background-color: $white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 590px;
     //PixelPerfect
@@ -508,6 +552,17 @@
 
   &::placeholder {
     color: $black;
+  }
+
+  &:hover {
+    background-color: $darkestgray;
+  }
+
+  &:focus,
+  &:active {
+    border: 4px solid $darkestgray;
+    box-sizing: border-box;
+    background-color: $white;
   }
 
   @include input-font;
@@ -727,9 +782,19 @@
     left: 0;
     cursor: pointer;
   }
+
+  &:hover::before {
+    background-color: $darkestgray;
+    border: 5px solid $darkestgray;
+  }
+
+  &:focus::before,
+  &:active::before {
+    background-color: $grayish;
+    border: 5px solid $grayish;
+  }
 }
 
-//Что-то не срослось
 .form__input--impression:checked + .form__label--impression::after {
   position: absolute;
   content: "";
@@ -740,6 +805,11 @@
   background-color: $darkgray;
   top: -2px;
   left: 17px;
+
+  &:focus::after,
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 // Форма про достопримечательности
@@ -895,6 +965,17 @@
     top: -20px;
     left: 0;
     cursor: pointer;
+  }
+
+  &:hover::before {
+    background-color: $darkestgray;
+    border: 5px solid $darkestgray;
+  }
+
+  &:focus::before,
+  &:active::before {
+    background-color: $grayish;
+    border: 5px solid $grayish;
   }
 }
 
