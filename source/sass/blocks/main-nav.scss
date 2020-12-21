@@ -54,6 +54,15 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -70,7 +79,7 @@
   box-shadow: 0 9px 0 0 $lightblue, 0 18px 0 0 $lightblue;
 }
 
-// Меню-бургер при наведении и нажатии
+/* Меню-бургер при наведении и нажатии
 .main-nav__toggle:active::before {
   background-color: fade($lightblue, 60%);
   box-shadow:
@@ -83,7 +92,7 @@
   box-shadow:
     0 9px 0 0 fade($lightblue, 30%),
     0 18px 0 0 fade($lightblue, 30%);
-}
+}*/
 
 // Меню-закрытие
 .main-nav__close {
@@ -96,6 +105,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

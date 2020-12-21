@@ -23,20 +23,26 @@
   color: $white;
   border-top: 1px solid rgba(1, 1, 1, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-  &:hover {
-    color: $lightblue;
+@media (max-width: $mobile-width-only) {
+  .site-list__link {
+    &:hover {
+      background-color: $brightblue;
+      color: $white;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $blue;
+      color: $whiteopacity;
+    }
   }
+}
 
-  &:focus {
-    color: $blackopacity;
-  }
 
-  &:active {
-    color: $plum;
-  }
-
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .site-list__link {
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
@@ -44,6 +50,18 @@
     border: none;
     padding-top: 16px;
     //margin-top: 16px;
+
+    &:hover {
+      color: $lightblue;
+    }
+
+    &:focus {
+      color: $blackopacity;
+    }
+
+    &:active {
+      color: $plum;
+    }
   }
 }
 
