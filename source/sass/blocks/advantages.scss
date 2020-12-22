@@ -183,6 +183,18 @@
   }
 }
 
+//Ретинизация на мобильной версии
+@media (max-width: $mobile-width-only) {
+  @media (min-resolution: 2dppx) {
+    .advantages__description--city {
+      &::after {
+        background-image: url("../img/mobile-city@2x.jpg");
+        background-size: 640px auto;
+      }
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .advantages__description--city {
     width: 256px;
@@ -204,6 +216,18 @@
   }
 }
 
+//Ретинизация на планшетной версии
+@media (min-width: $tablet-width) {
+  @media (min-resolution: 2dppx) {
+    .advantages__description--city {
+      &::after {
+        background-image: url("../img/city-photo-t@2x.jpg");
+        background-size: 1024px auto;
+      }
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .advantages__description--city {
     width: 400px;
@@ -215,6 +239,18 @@
       height: 256px;
       top: 0;
       left: 400px;
+    }
+  }
+}
+
+//Ретинизация на декстопной версии
+@media (min-width: $desktop-width) {
+  @media (min-resolution: 2dppx) {
+    .advantages__description--city {
+      &::after {
+        background-image: url("../img/city-photo-d@2x.jpg");
+        background-size: 1600px auto;
+      }
     }
   }
 }
@@ -243,6 +279,18 @@
   }
 }
 
+//Ретинизация на мобильной версии
+@media (max-width: $mobile-width-only) {
+  @media (min-resolution: 2dppx) {
+    .advantages__description--bridge {
+      &::after {
+        background-image: url("../img/mobile-bridge@2x.jpg");
+        background-size: 640px auto;
+      }
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .advantages__description--bridge {
     width: 256px;
@@ -260,6 +308,18 @@
   }
 }
 
+//Ретинизация на планшетной версии
+@media (min-width: $tablet-width) {
+  @media (min-resolution: 2dppx) {
+    .advantages__description--city {
+      &::after {
+        background-image: url("../img/tablet-bridge@2x.jpg");
+        background-size: 1024px auto;
+      }
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .advantages__description--bridge {
     width: 400px;
@@ -272,6 +332,18 @@
       height: 256px;
       top: 0;
       left: -800px;
+    }
+  }
+}
+
+//Ретинизация на декстопной версии
+@media (min-width: $desktop-width) {
+  @media (min-resolution: 2dppx) {
+    .advantages__description--bridge {
+      &::after {
+        background-image: url("../img/desktop-bridge@2x.jpg");
+        background-size: 1600px auto;
+      }
     }
   }
 }
