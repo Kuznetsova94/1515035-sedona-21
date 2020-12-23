@@ -66,7 +66,7 @@
     left: 0;
   }
 
-  //Ретинизация
+  //Ретинизация на мобильной версии
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
     background-size: 640px auto;
