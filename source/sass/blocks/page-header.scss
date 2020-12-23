@@ -105,7 +105,7 @@
     left: 0;
   }
 
-  //Ретинизация
+  //Ретинизация на мобильной версии
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
     background-size: 640px auto;
@@ -132,6 +132,7 @@
       left: 0;
     }
 
+    //Ретинизация на планшетной версии
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-tablet@2x.jpg");
       background-size: 1516px auto;
@@ -158,6 +159,7 @@
       left: 0;
     }
 
+    //Ретинизация на декстопной версии
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-desktop@2x.jpg");
       background-size: 2400px auto;
