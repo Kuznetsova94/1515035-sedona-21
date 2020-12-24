@@ -22,7 +22,7 @@
   box-sizing: border-box;
   z-index: 1;
   //PixelPerfect
-  margin-top: 3px;
+  margin-top: -1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +31,7 @@
     width: 102px;
     height: 84px;
     //PixelPerfect
-    top: -4px;
+    top: 0;
     left: 333px;
   }
 }
@@ -41,7 +41,7 @@
     width: 187px;
     height: 97px;
     top: 0;
-    left: 500px;
+    left: 505px;
   }
 }
 
