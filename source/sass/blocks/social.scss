@@ -10,6 +10,7 @@
   height: 48px;
   background-color: $lightblue;
   margin-right: 6px;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $brightblue;
@@ -18,7 +19,6 @@
   &:active,
   &:focus {
     background-color: $blue;
-    fill: $whiteopacity;
   }
 
   &:last-child {
@@ -26,14 +26,32 @@
   }
 }
 
-.social__icon--twitter {
-  margin: 16px 15px 18px 14px;
+//PixelPerfect
+.social__item--twitter {
+  padding-left: 15px;
+  padding-top: 17px;
 }
 
-.social__icon--facebook {
-  margin: 13px 19px 16px 19px;
+.social__item--facebook {
+  padding-left: 20px;
+  padding-top: 13px;
 }
 
-.social__icon--youtube {
-  margin: 17px 13px;
+.social__item--youtube {
+  padding-left: 13px;
+  padding-top: 17px;
+}
+
+
+.social__link {
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:active,
+  &:focus {
+    color: $whiteopacity;
+  }
 }
