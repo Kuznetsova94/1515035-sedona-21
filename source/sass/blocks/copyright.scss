@@ -6,8 +6,15 @@
   text-transform: uppercase;
 }
 
-.copyright__link path {
-  &:active {
-    fill: $lightblue;
+.copyright__link {
+  color: $black;
+
+  &:hover {
+    color: $lightblue;
+  }
+
+  &:active,
+  &:focus {
+    color: $blackopacity;
   }
 }
