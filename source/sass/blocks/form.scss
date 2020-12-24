@@ -49,21 +49,6 @@
   }
 }
 
-// ДУБЛИРУЮ КОД????
-/*.form__wrapper--header {
-  width: 306px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 435px;
-    margin-top: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 113px;
-  }
-}*/
-
 .form__title {
   font-weight: bold;
   font-size: 18px;
@@ -104,7 +89,6 @@
     //PixelPerfect
     margin: 0 auto;
     margin-top: 32px;
-    //margin-left: 104px;
   }
 
   @media (min-width: $desktop-width) {
@@ -360,7 +344,7 @@
   order: 2;
   position: relative;
   //PixelPerfect
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   margin-top: 22px;
   margin-left: 9px;
 
@@ -372,7 +356,7 @@
     background-position: 0 0;
     width: 320px;
     height: 1px;
-    bottom: 0;
+    bottom: -20px;
     left: -9px;
   }
 }
@@ -831,7 +815,7 @@
     width: 320px;
     height: 1px;
     bottom: 0;
-    left: 0;
+    left: -10px;
   }
 }
 
@@ -839,7 +823,7 @@
   .form__fieldset--sights {
     width: 648px;
     //PixelPerfect
-    margin-top: -13px;
+    margin-top: -5px;
     padding-bottom: 0;
 
     &::after {
@@ -850,8 +834,8 @@
       background-position: 0 0;
       width: 648px;
       height: 1px;
-      top: 7px;
-      left: 0;
+      top: 25px;
+      left: -7px;
     }
   }
 
@@ -865,7 +849,7 @@
   .form__fieldset--sights {
     width: 960px;
     //PixelPerfect
-    margin-top: -36px;
+    margin-top: -30px;
 
     &::after {
       position: absolute;
@@ -1102,12 +1086,17 @@
   min-height: 58px;
   font-size: 18px;
   margin: 0 auto;
+  box-sizing: border-box;
   //PixelPerfect
+  padding-top: 4px;
+  margin-top: 2px;
   margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     //PixelPerfect
+    padding-left: 0;
+    margin-top: 1px;
     margin-bottom: 66px;
     margin-left: 1px;
   }

@@ -67,6 +67,8 @@
 
 .site-list__link--html {
   position: relative;
+  //PixelPerfect
+  padding-bottom: 5px;
 
   &::after {
     content: "";
@@ -91,7 +93,6 @@
 //PixelPerfect
 @media (min-width: $tablet-width) {
   .site-list__link--photo {
-    // margin-right: 70px;
     margin-left: 27px;
   }
 
@@ -102,10 +103,10 @@
 
 @media (min-width: $desktop-width) {
   .site-list__link--photo {
-    margin-left: 20px;
+    margin-left: 25px;
   }
 
   .site-list__link--form {
-    margin-left: 135px;
+    margin-left: 245px;
   }
 }
