@@ -277,6 +277,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .gallery__likes {
+    &::before {
+      background-image: url("../img/like-icon-desktop.svg");
+    }
+  }
+}
+
 //Стилизация описания картинок под каждый экран
 @media (min-width: $tablet-width) {
   .gallery__description {
