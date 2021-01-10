@@ -57,7 +57,7 @@
   text-align: center;
   text-transform: uppercase;
   //PixelPerfect
-  margin-top: 35px;
+  margin-top: 37px;
   margin-left: 2px;
 
   @media (min-width: $tablet-width) {
@@ -153,8 +153,8 @@
   position: relative;
   padding-bottom: 22px;
   //PixelPerfect
-  margin-top: 8px;
-  margin-left: 9px;
+  margin-top: 7px;
+  margin-left: 10px;
 
   &::after {
     position: absolute;
@@ -167,6 +167,11 @@
     bottom: 0;
     left: -9px;
   }
+}
+
+.form__heading--name {
+  //PixelPerfect
+  margin-top: 55px;
 }
 
 @media (min-width: $tablet-width) {
@@ -188,6 +193,7 @@
 
   //PixelPerfect
   .form__heading--name {
+    //PixelPerfect
     margin-left: -53px;
   }
 }
@@ -335,6 +341,17 @@
     //PixelPerfect
     padding-left: 25px;
   }
+}
+
+//Сноски
+/*.form__label {
+  position: relative;
+}*/
+
+.form__remark {
+  position: absolute;
+  top: 20px;
+  left: 5px;
 }
 
 // Форма контактных данных
@@ -789,11 +806,12 @@
   background-color: $darkgray;
   top: -2px;
   left: 17px;
+}
 
-  &:focus::after,
-  &:active::after {
-    opacity: 0.3;
-  }
+//Интерактивность
+.form__input--impression:checked + .form__label--impression:focus::after,
+.form__input--impression:checked + .form__label--impression:active::after {
+  opacity: 0.3;
 }
 
 // Форма про достопримечательности
@@ -870,7 +888,6 @@
     margin-left: -10px;
   }
 }
-
 
 // Отступы у списка в мобильной версии
 @media (max-width: $mobile-width-only) {
@@ -975,6 +992,12 @@
   left: 17px;
 }
 
+//Интерактивность галочки
+.form__input--sights:checked + .form__label--sights:focus::after,
+.form__input--sights:checked + .form__label--sights:active::after {
+  opacity: 0.3;
+}
+
 // Форма с отзывом
 .form__fieldset--message {
   order: 5;
@@ -1058,6 +1081,17 @@
   margin-bottom: 35px;
 
   @include input-font;
+
+  &:hover {
+    background-color: $darkestgray;
+  }
+
+  &:focus,
+  &:active {
+    border: 4px solid $darkestgray;
+    box-sizing: border-box;
+    background-color: $white;
+  }
 
   @media (min-width: $tablet-width) {
     width: 648px;

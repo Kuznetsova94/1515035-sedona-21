@@ -2,6 +2,12 @@
   display: none;
   width: 320px;
   min-height: 280px;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
   @media (min-width: $tablet-width) {
@@ -13,6 +19,7 @@
 .modal-fail__wrapper {
   width: 237px;
   margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     width: 272px;
@@ -47,6 +54,32 @@
 .modal-fail__button {
   border: none;
   margin: 0 auto;
+  margin-bottom: 35px;
   width: 180px;
   height: 58px;
+}
+
+//Интерактивность модального окна
+.modal-fail__show {
+  display: block;
+  animation: bounce 0.5s;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

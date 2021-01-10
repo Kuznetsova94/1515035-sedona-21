@@ -14,7 +14,9 @@
     justify-content: space-between;
     width: 690px;
     margin: 0 auto;
+    //PixelPerfect
     margin-left: 49px;
+    margin-bottom: 1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,8 +38,10 @@
   }
 }
 
-.main-nav__list--close {
-  //display: none;
+@media (max-width: $mobile-width-only) {
+  .main-nav__list--close {
+    display: none;
+  }
 }
 
 // Меню-бургер
@@ -48,7 +52,7 @@
   width: 23px;
   height: 22px;
   //PixelPerfect
-  bottom: -40px;
+  bottom: -38px;
   right: 20px;
   background-color: transparent;
   border: none;
@@ -79,20 +83,9 @@
   box-shadow: 0 9px 0 0 $lightblue, 0 18px 0 0 $lightblue;
 }
 
-/* Меню-бургер при наведении и нажатии
-.main-nav__toggle:active::before {
-  background-color: fade($lightblue, 60%);
-  box-shadow:
-    0 9px 0 0 fade($lightblue, 60%),
-    0 18px 0 0 fade($lightblue, 60%);
+.main-nav__toggle--closed {
+  display: none;
 }
-
-.main-nav__toggle:focus::before {
-  background-color: fade($lightblue, 30%);
-  box-shadow:
-    0 9px 0 0 fade($lightblue, 30%),
-    0 18px 0 0 fade($lightblue, 30%);
-}*/
 
 // Меню-закрытие
 .main-nav__close {

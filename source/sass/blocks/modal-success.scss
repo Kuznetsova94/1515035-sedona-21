@@ -1,6 +1,12 @@
 .modal-success {
   display: none;
   width: 320px;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
   box-shadow: 0 7px 15px $shadow;
 
   @media (min-width: $tablet-width) {
@@ -66,5 +72,20 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     min-height: 58px;
+  }
+}
+
+.modal-success__show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-500px, -2000px);
+  }
+
+  100% {
+    transform: translate(-500px, -50%);
   }
 }

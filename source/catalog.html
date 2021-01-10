@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -22,7 +22,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list--close site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">
                 Главная
@@ -166,7 +166,7 @@
                       alt="Фотография моста дьявола">
                   </picture>
                 </a>
-                <div class="gallery__description">
+                <div class="gallery__description gallery__description--bridge">
                   <h3 class="gallery__name">Мост дьявола</h3>
                   <p class="gallery__author">Автор фото: Антон</p>
                   <p class="gallery__likes">254</p>
@@ -176,29 +176,6 @@
           </ul>
         </div>
       </section>
-      <!--<section class="presentation">
-        <div class="presentation__wrapper">
-          <div class="presentation__header">
-            <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-            <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-              очередной
-              раз!</p>
-          </div>
-          <picture class="presentation__video">
-            <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="presentation__cover" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x"
-              alt="Обложка видео о городе Седона">
-          </picture>
-        </div>
-      </section>-->
-
       <section class="presentation">
         <div class="presentation__wrapper">
           <div class="presentation__header">
@@ -244,9 +221,9 @@
             </g>
           </symbol>
           <symbol id="replay" viewBox="0 0 16 20">
-            <g fill=currentColor  >
+            <g fill=currentColor>
               <path
-                d="M7.5 4V4.5H8C12.1239 4.5 15.5 7.87614 15.5 12C15.5 16.1239 12.1239 19.5 8 19.5C4.04411 19.5 0.776264 16.3933 0.516625 12.5H1.51917C1.77646 15.8447 4.59205 18.5 8 18.5C11.5761 18.5 14.5 15.5761 14.5 12C14.5 8.42386 11.5761 5.5 8 5.5H7.5V6V8.79289L3.70711 5L7.5 1.20711V4Z" stroke=currentColor/>
+                d="M7.5 4V4.5H8C12.1239 4.5 15.5 7.87614 15.5 12C15.5 16.1239 12.1239 19.5 8 19.5C4.04411 19.5 0.776264 16.3933 0.516625 12.5H1.51917C1.77646 15.8447 4.59205 18.5 8 18.5C11.5761 18.5 14.5 15.5761 14.5 12C14.5 8.42386 11.5761 5.5 8 5.5H7.5V6V8.79289L3.70711 5L7.5 1.20711V4Z" stroke=currentColor />
             </g>
           </symbol>
           <symbol id="subtitles" viewBox="0 0 32 20">
@@ -379,6 +356,7 @@
       </div>
     </footer>
   </div>
+  <script src="../js/script.min.js"></script>
 </body>
 
 </html>
