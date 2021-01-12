@@ -1,14 +1,15 @@
 .button {
-  background-color: $lightblue;
-  color: $white;
-  display: block;
-  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  background-color: $lightblue;
+  color: $white;
+  display: block;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $brightblue;

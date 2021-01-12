@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -22,7 +22,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list main-nav__list--close site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">
                 Главная
@@ -166,7 +166,7 @@
                       alt="Фотография моста дьявола">
                   </picture>
                 </a>
-                <div class="gallery__description">
+                <div class="gallery__description gallery__description--bridge">
                   <h3 class="gallery__name">Мост дьявола</h3>
                   <p class="gallery__author">Автор фото: Антон</p>
                   <p class="gallery__likes">254</p>
@@ -176,29 +176,6 @@
           </ul>
         </div>
       </section>
-      <!--<section class="presentation">
-        <div class="presentation__wrapper">
-          <div class="presentation__header">
-            <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-            <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-              очередной
-              раз!</p>
-          </div>
-          <picture class="presentation__video">
-            <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="presentation__cover" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x"
-              alt="Обложка видео о городе Седона">
-          </picture>
-        </div>
-      </section>-->
-
       <section class="presentation">
         <div class="presentation__wrapper">
           <div class="presentation__header">
@@ -244,9 +221,9 @@
             </g>
           </symbol>
           <symbol id="replay" viewBox="0 0 16 20">
-            <g fill=currentColor  >
+            <g fill=currentColor>
               <path
-                d="M7.5 4V4.5H8C12.1239 4.5 15.5 7.87614 15.5 12C15.5 16.1239 12.1239 19.5 8 19.5C4.04411 19.5 0.776264 16.3933 0.516625 12.5H1.51917C1.77646 15.8447 4.59205 18.5 8 18.5C11.5761 18.5 14.5 15.5761 14.5 12C14.5 8.42386 11.5761 5.5 8 5.5H7.5V6V8.79289L3.70711 5L7.5 1.20711V4Z" stroke=currentColor/>
+                d="M7.5 4V4.5H8C12.1239 4.5 15.5 7.87614 15.5 12C15.5 16.1239 12.1239 19.5 8 19.5C4.04411 19.5 0.776264 16.3933 0.516625 12.5H1.51917C1.77646 15.8447 4.59205 18.5 8 18.5C11.5761 18.5 14.5 15.5761 14.5 12C14.5 8.42386 11.5761 5.5 8 5.5H7.5V6V8.79289L3.70711 5L7.5 1.20711V4Z" stroke=currentColor />
             </g>
           </symbol>
           <symbol id="subtitles" viewBox="0 0 32 20">
@@ -305,39 +282,11 @@
           </ul>
         </div>
       </section>
-
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__hashtag">
           <p>#visitsedona</p>
-          <!-- Векторный спрайт -->
-          <svg class="social__item" style="display: none">
-            <symbol id="twitter" viewBox="0 0 18 15">
-              <g fill=currentColor>
-                <path
-                  d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z" />
-              </g>
-            </symbol>
-            <symbol id="facebook" viewBox="0 0 9 19">
-              <g fill=currentColor>
-                <path
-                  d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z" />
-              </g>
-            </symbol>
-            <symbol id="youtube" viewBox="0 0 20 14">
-              <g fill=currentColor>
-                <path
-                  d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z" />
-              </g>
-            </symbol>
-            <symbol id="html-logo" viewBox="0 0 27 35">
-              <g fill=currentColor>
-                <path
-                  d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
-              </g>
-            </symbol>
-          </svg>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -345,7 +294,7 @@
               <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Мы в твиттере</span>
                 <svg width="18" height="15" viewBox="0 0 18 15">
-                  <use xlink:href="#twitter"></use>
+                  <use xlink:href="./img/icons/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -353,7 +302,7 @@
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Мы в фейсбуке</span>
                 <svg width="9" height="19" viewBox="0 0 9 19">
-                  <use xlink:href="#facebook"></use>
+                  <use xlink:href="./img/icons/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -361,7 +310,7 @@
               <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">Мы на ютубе</span>
                 <svg width="20" height="14" viewBox="0 0 20 14">
-                  <use xlink:href="#youtube"></use>
+                  <use xlink:href="./img/icons/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -372,13 +321,14 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg width="27" height="35" viewBox="0 0 27 35">
-              <use xlink:href="#html-logo"></use>
+              <use xlink:href="./img/icons/sprite.svg#html-logo"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
   </div>
+  <script src="./js/main-navigation.min.js"></script>
 </body>
 
 </html>

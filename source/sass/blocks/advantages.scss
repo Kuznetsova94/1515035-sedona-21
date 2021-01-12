@@ -8,52 +8,52 @@
   width: 285px;
   min-height: 162px;
   //PixelPerfect
-  margin-bottom: 9px;
+  margin-bottom: -3px;
 
   @media (min-width: $tablet-width) {
     width: 520px;
     min-height: 110px;
     //PixelPerfect
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 483px;
     //PixelPerfect
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 }
 
 .advantages__slogan {
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 29px;
   //PixelPerfect
-  margin-top: 34px;
-  margin-left: 13px;
-  width: 255px;
+  margin-top: 32px;
+  margin-left: 6px;
+  width: 270px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     //PixelPerfect
-    margin-top: 44px;
-    margin-left: -1px;
+    margin-top: 42px;
+    margin-left: -2px;
     margin-bottom: 30px;
     width: 520px;
   }
 
   @media (min-width: $desktop-width) {
     //PixelPerfect
-    margin-top: 55px;
-    margin-left: -24px;
-    //margin-bottom: 30px;
+    margin-top: 53px;
+    margin-left: -21px;
+    margin-bottom: 30px;
   }
 }
-
 
 .advantages__introduction {
   font-size: 14px;
@@ -65,14 +65,12 @@
 
   @media (max-width: $mobile-width-only) {
     //PixelPerfect
-    margin-top: 30px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     //PixelPerfect
-    margin-top: 31px;
-    margin-left: -5px;
+    margin-left: 0;
   }
 }
 
@@ -102,6 +100,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     padding-top: 40px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -255,9 +254,17 @@
   }
 }
 
-.advantages__title--city {
-  //PixelPerfect
-  padding-top: 72px;
+@media (max-width: $mobile-width-only) {
+  .advantages__title--city {
+    //PixelPerfect
+    padding-top: 72px;
+    margin-left: 2px;
+  }
+
+  .advantages__text--city {
+    margin-top: -1px;
+    margin-left: 2px;
+  }
 }
 
 //Вторая причина
@@ -351,6 +358,7 @@
 //PixelPerfect
 .advantages__title--bridge {
   padding-top: 40px;
+  margin-left: -4px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -393,7 +401,7 @@
       background-position: 0 0;
       width: 280px;
       height: 1px;
-      bottom: 23px;
+      bottom: 21px;
       left: 20px;
     }
   }
@@ -401,6 +409,7 @@
   //PixelPerfect
   .advantages__title--square {
     padding-top: 26px;
+    margin-left: 1px;
   }
 }
 
@@ -412,6 +421,7 @@
 
 .advantages__description--road {
   padding-top: 5px;
+  margin-left: 1px;
   box-sizing: border-box;
 }
 
@@ -421,7 +431,8 @@
 }
 
 .advantages__description--tourists {
-  padding-top: 5px;
+  padding-top: 6px;
+  margin-left: 1px;
   box-sizing: border-box;
 }
 
@@ -432,25 +443,34 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__text--city,
   .advantages__title--city {
-    width: 192px;
+    width: 200px;
     margin: 0 auto;
+    padding-top: 42px;
   }
 
-  .advantages__title--city {
-    padding-top: 40px;
+  .advantages__text--city {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: -4px;
   }
 
-  .advantages__text--bridge,
+  .advantages__text--bridge {
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+
   .advantages__title--bridge {
-    width: 185px;
+    width: 150px;
     margin: 0 auto;
+    margin-left: 51px;
+    margin-top: 21px;
   }
 
   .advantages__text--square,
   .advantages__title--square {
-    width: 190px;
+    width: 189px;
     margin: 0 auto;
   }
 
@@ -461,6 +481,10 @@
 
   .advantages__text--square {
     margin-top: -4px;
+  }
+
+  .advantages__description--road {
+    margin-left: -1px;
   }
 
   .advantages__text--road,
@@ -500,23 +524,21 @@
   .advantages__title--city {
     width: 150px;
     padding-top: 48px;
-    margin-left: 120px;
-  }
-
-  .advantages__text--bridge,
-  .advantages__title--bridge {
-    width: 245px;
+    padding-bottom: 2px;
+    margin-left: 126px;
   }
 
   //PixelPerfect
   .advantages__title--bridge {
+    width: 245px;
+    margin: 0 auto;
     padding-top: 52px;
     padding-bottom: 2px;
   }
 
   .advantages__text--bridge {
     width: 220px;
-    padding-top: -25px;
+    margin-top: -5px;
   }
 
   .advantages__text--square {
@@ -525,6 +547,12 @@
 
   .advantages__title--square {
     width: 150px;
+    padding-top: 45px;
+  }
+
+  .advantages__description--road,
+  .advantages__description--tourists {
+    margin-left: -1px;
   }
 
   .advantages__text--road {
@@ -532,7 +560,8 @@
   }
 
   .advantages__title--road {
-    margin-top: -10px;
+    padding-top: 39px;
+    padding-bottom: 1px;
     width: 150px;
   }
 
@@ -541,14 +570,18 @@
   }
 
   .advantages__title--tourists {
-    margin-top: -10px;
+    padding-top: 37px;
+    padding-bottom: 3px;
+    padding-left: 3px;
     width: 150px;
   }
 }
 
 .advantages__break {
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
-    display: none;
+  //PixelPerfect
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inine;
   }
 }
