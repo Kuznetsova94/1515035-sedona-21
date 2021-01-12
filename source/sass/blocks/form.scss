@@ -33,6 +33,7 @@
   .form__header {
     width: 1200px;
     min-height: 107px;
+    padding-bottom: 15px;
   }
 }
 
@@ -69,7 +70,7 @@
 
   @media (min-width: $desktop-width) {
     //PixelPerfect
-    margin-top: 117px;
+    margin-top: 115px;
   }
 }
 
@@ -197,8 +198,8 @@
   .form__fieldset--name {
     width: 400px;
     //PixelPerfect
-    margin-top: -6px;
-    margin-left: 78px;
+    margin-top: -5px;
+    margin-left: 77px;
     margin-bottom: 70px;
 
     &::after {
@@ -209,7 +210,7 @@
   //PixelPerfect
   .form__heading--name {
     text-align: left;
-    margin-left: 2px;
+    margin-left: 0;
   }
 }
 
@@ -298,7 +299,7 @@
   @media (min-width: $desktop-width) {
     width: 310px;
     //PixelPerfect
-    padding-left: 25px;
+    padding-left: 24px;
   }
 }
 
@@ -339,9 +340,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 314px;
+    width: 313px;
     //PixelPerfect
-    padding-left: 25px;
+    padding-left: 23px;
   }
 }
 
@@ -415,7 +416,7 @@
   .form__fieldset--contacts {
     width: 960px;
     //PixelPerfect
-    margin-top: 1px;
+    margin-top: 2px;
 
     &::after {
       position: absolute;
@@ -446,15 +447,6 @@
 
 .form__label--telephone {
   margin-left: 23px;
-
-  @media (min-width: $desktop-width) {
-    width: 160px;
-    //PixelPerfect
-    margin: 0;
-    margin-right: 15px;
-    margin-left: 10px;
-    margin-top: 20px;
-  }
 }
 
 // Слово "телефон" на разных экранах
@@ -467,9 +459,9 @@
 .form__label--desktop {
   display: none;
   //PixelPerfect
-  margin-right: 15px;
-  margin-left: 1px;
-  margin-top: 23px;
+  margin-right: 17px;
+  margin-left: -2px;
+  margin-top: 21px;
 
   @media (min-width: $desktop-width) {
     display: inline;
@@ -515,8 +507,8 @@
     width: 270px;
     height: 60px;
     //PixelPerfect
-    padding-top: 5px;
-    padding-left: 25px;
+    padding-top: 3px;
+    padding-left: 23px;
   }
 }
 
@@ -551,7 +543,6 @@
     }
   }
 }
-
 
 .form__email {
   width: 223px;
@@ -593,8 +584,9 @@
     width: 275px;
     height: 60px;
     //PixelPerfect
+    padding-top: 7px;
     margin-left: 5px;
-    padding-left: 21px;
+    padding-left: 20px;
   }
 }
 
@@ -724,7 +716,7 @@
   .form__fieldset--impression {
     width: 350px;
     //PixelPerfect
-    margin-top: -5px;
+    margin-top: -4px;
     padding-right: 128px;
 
     &::after {
@@ -763,12 +755,12 @@
 //PixelPerfect
 @media (min-width: $desktop-width) {
   .form__heading--impression {
-    margin-left: 43px;
+    margin-left: 40px;
   }
 
   .form__item--impression {
     margin-top: 52px;
-    margin-left: 2px;
+    margin-left: 0;
 
     &:first-child {
       margin-top: 66px;
@@ -904,7 +896,7 @@
   .form__heading--sights {
     width: 275px;
     //PixelPerfect
-    //margin-left: -10px;
+    margin-left: -10px;
   }
 }
 
@@ -955,13 +947,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     //PixelPerfect
-    margin-top: 33px;
+    margin-top: 34px;
     margin-left: -18px;
     padding-left: 0;
     padding-right: 0;
   }
 }
-
 
 .form__label--sights {
   font-weight: bold;
