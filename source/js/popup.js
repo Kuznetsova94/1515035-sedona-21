@@ -1,20 +1,20 @@
-const openButton = document.querySelector(".form__button");
+var openButton = document.querySelector(".form__button");
 //Модальное окно с сообщением об успешной отправке
-const successPopup = document.querySelector(".modal-success");
-const popupSuccessClose = successPopup.querySelector(".modal-success__button");
+var successPopup = document.querySelector(".modal-success");
+var popupSuccessClose = successPopup.querySelector(".modal-success__button");
 //Модальное окно с сообщением об ошибке
-const failPopup = document.querySelector(".modal-fail");
-const popupFailClose = failPopup.querySelector(".modal-fail__button");
+var failPopup = document.querySelector(".modal-fail");
+var popupFailClose = failPopup.querySelector(".modal-fail__button");
 //Обязательные поля для заполнения формы
 //ФИО
-const nameForm = document.querySelector(".form__name");
-const surnameForm = document.querySelector(".form__surname");
+var nameForm = document.querySelector(".form__name");
+var surnameForm = document.querySelector(".form__surname");
 //Контактная информация
-const telephoneForm = document.querySelector(".form__telephone");
-const emailForm = document.querySelector(".form__email");
+var telephoneForm = document.querySelector(".form__telephone");
+var emailForm = document.querySelector(".form__email");
 
-const isStorageSupport = true;
-let storage = "";
+var isStorageSupport = true;
+var storage = "";
 
 try {
     storage = localStorage.getItem("name");
@@ -57,20 +57,4 @@ openButton.addEventListener("click", function (evt) {
 popupFailClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   failPopup.classList.remove("modal-fail__show");
-});
-
-// Навигация в мобильной версии
-const openNavButton = document.querySelector('.main-nav__toggle');
-const closeButton = document.querySelector('.main-nav__close');
-const mainNav = document.querySelector('.main-nav__list');
-
-openNavButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mainNav.classList.remove("main-nav__list--close");
-  openNavButton.classList.add("main-nav__toggle--closed");
-});
-closeButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mainNav.classList.add('main-nav__list--close');
-  openNavButton.classList.remove("main-nav__toggle--closed");
 });
