@@ -106,15 +106,23 @@
 
 .modal-success__show {
   display: block;
-  animation: bounce 0.6s;
+  animation: show 0.6s;
 }
 
-@keyframes bounce {
+@keyframes show {
   0% {
-    transform: translate(-500px, -2000px);
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
   }
 
   100% {
-    transform: translate(-500px, -50%);
+    transform: translateY(0);
   }
 }
