@@ -188,11 +188,11 @@
 
 @media (min-width: $desktop-width) {
   .details__item--souvenirs {
-    width: 215px;
+    width: 235px;
 
     &::before {
       top: 12px;
-      left: 56px;
+      left: 77px;
     }
   }
 }
@@ -211,7 +211,7 @@
 
   @media (min-width: $desktop-width) {
     //PixelPerfect
-    margin-left: -35px;
+    margin-left: -15px;
   }
 }
 
@@ -219,15 +219,10 @@
   margin-left: 5px;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 195px;
     margin-top: 14px;
     margin-bottom: 22px;
-    margin-left: 13px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //PixelPerfect
-    margin-left: -38px;
+    margin-left: 10px;
   }
 }
 
@@ -236,7 +231,6 @@
   min-height: 105px;
   padding-left: 52px;
   position: relative;
-  //margin-left: 18px;
   order: 3;
 
   &::before {
@@ -277,7 +271,7 @@
 
     &::before {
       top: 19px;
-      left: 84px;
+      left: 95px;
     }
   }
 }
@@ -297,7 +291,7 @@
   @media (min-width: $desktop-width) {
     //PixelPerfect
     margin-top: 13px;
-    margin-left: -65px;
+    margin-left: -45px;
   }
 }
 
@@ -311,27 +305,26 @@
   @media (min-width: $desktop-width) {
     //PixelPerfect
     width: 290px;
-    margin-left: -22px;
+    margin-left: -11px;
   }
 }
 
-
-.details__break {
+// Пробел
+//Блок о сувенирах, мобильная и планшетная версии
+.details__text--souvenirs-desktop {
   display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline;
-  }
 }
 
-.details__break-food {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
-
-  @media (min-width: $desktop-width) {
+//Блок о сувенирах, десктопная версия
+@media (min-width: $desktop-width) {
+  .details__text--souvenirs-mobile {
     display: none;
+  }
+
+  .details__text--souvenirs-desktop {
+    display: block;
+    width: 220px;
+    margin-left: -1px;
+    margin-bottom: 15px;
   }
 }

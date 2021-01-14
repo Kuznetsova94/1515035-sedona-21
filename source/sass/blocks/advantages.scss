@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .advantages__header {
   margin: 0 auto;
   width: 285px;
@@ -42,15 +41,15 @@
     font-size: 21px;
     //PixelPerfect
     margin-top: 42px;
-    margin-left: -2px;
+    margin-left: 0;
     margin-bottom: 30px;
-    width: 520px;
+    width: 518px;
   }
 
   @media (min-width: $desktop-width) {
     //PixelPerfect
     margin-top: 53px;
-    margin-left: -21px;
+    margin-left: -19px;
     margin-bottom: 30px;
   }
 }
@@ -271,7 +270,7 @@
 .advantages__description--bridge {
   position: relative;
   margin-top: 21px;
-  margin-bottom: 250px;
+  margin-bottom: 249px;
 
   &::after {
     content: "";
@@ -330,7 +329,7 @@
 @media (min-width: $desktop-width) {
   .advantages__description--bridge {
     width: 400px;
-    margin-top: 35px;
+    margin-top: 42px;
     margin-left: 800px;
 
     &::after {
@@ -355,27 +354,12 @@
   }
 }
 
-//PixelPerfect
-.advantages__title--bridge {
-  padding-top: 40px;
-  margin-left: -4px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 43px;
-  }
-}
-
-.advantages__text--bridge {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 37px;
-  }
-}
-
 //Стилизация остальных причин
 .advantages__description--square,
 .advantages__description--road,
 .advantages__description--tourists {
   background-color: $lightgray;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -408,7 +392,7 @@
 
   //PixelPerfect
   .advantages__title--square {
-    padding-top: 26px;
+    padding-top: 27px;
     margin-left: 1px;
   }
 }
@@ -419,9 +403,14 @@
   margin: 0 auto;
 }
 
+.advantages__title--bridge {
+  padding-top: 40px;
+  margin-left: -4px;
+}
+
 .advantages__description--road {
-  padding-top: 5px;
-  margin-left: 1px;
+  padding-top: 6px;
+  margin-top: -1px;
   box-sizing: border-box;
 }
 
@@ -431,8 +420,8 @@
 }
 
 .advantages__description--tourists {
-  padding-top: 6px;
-  margin-left: 1px;
+  padding-top: 7px;
+  margin-top: -1px;
   box-sizing: border-box;
 }
 
@@ -455,31 +444,32 @@
     margin-top: -4px;
   }
 
-  .advantages__text--bridge {
-    width: 160px;
-    margin: 0 auto;
-    margin-top: 22px;
-  }
-
   .advantages__title--bridge {
     width: 150px;
     margin: 0 auto;
-    margin-left: 51px;
     margin-top: 21px;
+    margin-bottom: 13px;
+    padding-top: 44px;
   }
 
-  .advantages__text--square,
-  .advantages__title--square {
-    width: 189px;
+  .advantages__text--bridge {
+    width: 160px;
     margin: 0 auto;
+    margin-top: -5px;
+    padding-bottom: 33px;
   }
 
   //PixelPerfect
   .advantages__title--square {
+    margin: 0 auto;
+    width: 189px;
     padding-top: 43px;
+    padding-bottom: 1px;
   }
 
   .advantages__text--square {
+    margin: 0 auto;
+    width: 189px;
     margin-top: -4px;
   }
 
@@ -495,23 +485,30 @@
 
   //PixelPerfect
   .advantages__title--road {
-    padding-top: -5px;
+    margin-top: -1px;
   }
 
   .advantages__text--road {
-    margin-top: -5px;
+    margin-top: -4px;
     width: 140px;
   }
 
-  .advantages__text--tourists,
+  .advantages__description--tourists {
+    margin-left: -1px;
+  }
+
   .advantages__title--tourists {
     width: 155px;
-    margin: 0 auto;
+    margin-top: -3px;
+    margin-left: 54px;
+    padding-bottom: 2px;
   }
 
   .advantages__text--tourists {
+    width: 155px;
     margin-top: -5px;
     margin-bottom: -5px;
+    margin-left: 54px;
   }
 }
 
@@ -530,7 +527,7 @@
 
   //PixelPerfect
   .advantages__title--bridge {
-    width: 245px;
+    width: 149px;
     margin: 0 auto;
     padding-top: 52px;
     padding-bottom: 2px;
@@ -552,7 +549,7 @@
 
   .advantages__description--road,
   .advantages__description--tourists {
-    margin-left: -1px;
+    margin-left: 0;
   }
 
   .advantages__text--road {
@@ -561,27 +558,23 @@
 
   .advantages__title--road {
     padding-top: 39px;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
     width: 150px;
+  }
+
+  .advantages__description--tourists {
+    margin-left: 0;
   }
 
   .advantages__text--tourists {
     width: 290px;
+    padding-left: 2px;
   }
 
   .advantages__title--tourists {
-    padding-top: 37px;
-    padding-bottom: 3px;
-    padding-left: 3px;
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-bottom: 1px;
     width: 150px;
-  }
-}
-
-.advantages__break {
-  //PixelPerfect
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inine;
   }
 }

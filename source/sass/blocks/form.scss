@@ -346,18 +346,6 @@
   }
 }
 
-/*Сноски
-.form__label {
-  position: relative;
-}
-
-.form__remark {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  padding-right: 5px;
-}*/
-
 // Форма контактных данных
 .form__fieldset--contacts {
   width: 280px;
@@ -948,9 +936,9 @@
     justify-content: space-between;
     //PixelPerfect
     margin-top: 34px;
-    margin-left: -18px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: -21px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 }
 
@@ -1118,7 +1106,7 @@
     width: 960px;
     height: 160px;
     //PixelPerfect
-    padding-left: 22px;
+    padding-left: 20px;
   }
 }
 
@@ -1138,7 +1126,7 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     //PixelPerfect
-    padding-left: 0;
+    padding-left: 7px;
     margin-top: 1px;
     margin-bottom: 66px;
     margin-left: 1px;
@@ -1146,6 +1134,8 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 

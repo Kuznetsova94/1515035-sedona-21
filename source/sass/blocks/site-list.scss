@@ -21,8 +21,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  border-top: 1px solid rgba(1, 1, 1, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $whiteopacityless;
   //PixelPerfect
   padding-top: 9px;
   padding-left: -2px;
@@ -58,7 +58,6 @@
     border: none;
     //PixelPerfect
     padding-top: 16px;
-    //margin-top: 16px;
 
     &:hover {
       color: $lightblue;

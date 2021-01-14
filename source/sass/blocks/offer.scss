@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,21 +50,31 @@
   @media (min-width: $tablet-width) {
     //PixelPerfect
     margin-top: -12px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
     //PixelPerfect
-    margin-bottom: 43px;
-    margin-top: -10px;
+    margin-bottom: 42px;
+    margin-top: -11px;
     margin-left: -1px;
   }
 }
 
-.offer__break {
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
+//Пробел
+@media (max-width: $mobile-width-only) {
+  .offer__text-tablet {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .offer__text-mobile {
+    display: none;
+  }
+
+  .offer__text-tablet {
+    display: block;
   }
 }
 

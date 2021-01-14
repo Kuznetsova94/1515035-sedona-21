@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -94,13 +95,16 @@
                     </li>
                     <li class="details__item details__item--souvenirs">
                       <h4 class="details__title details__title--souvenirs">Сувениры</h4>
-                      <p class="details__text details__text--souvenirs">Не только китайского, <br
-                          class="details__break"> но и местного производства!</p>
+                      <p class="details__text details__text--souvenirs details__text--souvenirs-mobile">Не только
+                        китайского, но и местного
+                        производства!</p>
+                      <p class="details__text details__text--souvenirs details__text--souvenirs-desktop">Не только
+                        китайского, <br> но и местного производства!</p>
                     </li>
                     <li class="details__item details__item--food">
                       <h4 class="details__title details__title--food">Еда</h4>
-                      <p class="details__text details__text--food">Всегда заказывайте <br class="details__break-food">
-                        фирменный бургер, вы не разочаруетесь!</p>
+                      <p class="details__text details__text--food">Всегда заказывайте фирменный бургер, вы не
+                        разочаруетесь!</p>
                     </li>
                   </ul>
                 </div>
@@ -108,8 +112,7 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__description advantages__description--bridge">
-                <h3 class="advantages__title advantages__title--bridge">Там есть мост <br class="advantages__break">
-                  &thinsp;дьявола</h3>
+                <h3 class="advantages__title advantages__title--bridge">Там есть мост дьявола</h3>
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__text advantages__text--bridge">Да, по нему можно пройти! Если вы осмелитесь,
                   конечно</p>
@@ -143,9 +146,10 @@
       <section class="offer">
         <div class="offer__wrapper">
           <h2 class="offer__title">Заинтересовались?</h2>
-          <p class="offer__text">Укажите предполагаемые даты поездки, <br class="offer__break"> и мы покажем вам лучшие
-            предложения гостиниц в
-            седоне</p>
+          <p class="offer__text offer__text-mobile">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в седоне</p>
+            <p class="offer__text offer__text-tablet">Укажите предполагаемые даты поездки, <br class="offer__break"> и мы покажем вам лучшие
+              предложения гостиниц в седоне</p>
           <a class="offer__button button" href="#">Найти гостиницу</a>
         </div>
         <iframe class="offer__map"
