@@ -77,11 +77,11 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label form__label--name" for="name-field">Имя<sup>*</sup>:</label>
-                <input class="form__name" type="text" name="name" id="name-field" placeholder="Петр">
+                <input class="form__name" type="text" name="name" id="name-field" placeholder="Петр" required>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--name" for="surname-field">Фамилия<sup>*</sup>:</label>
-                <input class="form__surname" type="text" name="surname" id="surname-field" placeholder="Иванов">
+                <input class="form__surname" type="text" name="surname" id="surname-field" placeholder="Иванов" required>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--name" for="patronymic-field">Отчество:</label>
@@ -100,13 +100,11 @@
                   Телефон<sup>*</sup>:</label>
                 <input class="form__telephone" type="tel" name="telephone" id="telephone-field"
                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" placeholder="Введите телефон" required>
-                  <p class="form__error">Проверьте формат ввода данных</p>
               </li>
               <li class="form__item form__item--email">
                 <label class="form__label form__label--email" for="email-field">Электронная почта<sup>*</sup>:</label>
                 <input class="form__email" type="email" name="email" id="email-field" placeholder="Введите e-mail"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                <p class="form__error">Проверьте формат ввода данных</p>
               </li>
             </ul>
           </fieldset>
