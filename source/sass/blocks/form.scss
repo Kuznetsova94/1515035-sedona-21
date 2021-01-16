@@ -1155,3 +1155,64 @@
     margin-top: 19px;
   }
 }
+
+//Форма ввода телефонного номера и электронной почты
+.form__telephone:invalid {
+  border: solid 3px $red;
+}
+
+.form__telephone:invalid + .form__error {
+  display: inline;
+  color: $red;
+}
+
+@media (min-width: $desktop-width) {
+  .form__telephone:invalid {
+    position: relative;
+    padding-bottom: 5px;
+  }
+
+  .form__telephone:invalid + .form__error {
+    position: absolute;
+    top: 60px;
+    left: 83px;
+  }
+}
+
+.form__telephone:valid + .form__error {
+  display: none;
+}
+
+.form__email:invalid {
+  border: solid 3px $red;
+}
+
+.form__email:invalid + .form__error {
+  display: inline;
+  color: $red;
+}
+
+.form__email:valid + .form__error {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .form__email:invalid {
+    position: relative;
+    padding-bottom: 5px;
+  }
+
+  .form__email:invalid + .form__error {
+    position: absolute;
+    top: 60px;
+    right: 108px;
+  }
+}
+
+.form__telephone:valid {
+  border: solid 3px $green;
+}
+
+.form__email:valid {
+  border: solid 3px $green;
+}
